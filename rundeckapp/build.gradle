@@ -155,6 +155,13 @@ dependencies {
     profile ("org.grails.profiles:web"){
         exclude(group:"org.grails.profiles",module:"web")
     }
+
+    //openapi dependencies
+    annotationProcessor "io.micronaut.configuration:micronaut-openapi:1.4.0"
+    compile "io.swagger.core.v3:swagger-annotations:2.1.1"
+    compileOnly "io.micronaut.configuration:micronaut-openapi:1.4.0"
+    compile 'io.micronaut:micronaut-http-client'
+
 //    runtime "org.springframework:spring-test:5.0.3.RELEASE"
     runtime "com.h2database:h2:1.4.199"
     runtime 'org.apache.logging.log4j:log4j-web:2.13.3'
