@@ -27,7 +27,7 @@ import org.apache.commons.cli.ParseException
 import com.dtolabs.rundeck.core.encrypter.PasswordUtilityEncrypter
 import rundeckapp.Application
 import rundeckapp.init.RundeckInitConfig
-import liquibase.util.StringUtils
+import liquibase.util.StringUtil
 
 
 class CommandLineSetup {
@@ -189,7 +189,7 @@ class CommandLineSetup {
         if(!System.getProperty("logging.config")) {
             System.setProperty("logging.config",System.getProperty(RundeckInitConfig.SYS_PROP_RUNDECK_SERVER_CONFIG_DIR)+"/log4j2.properties")
         }
-        if(!StringUtils.isEmpty(cliOptions.tag))
+        if(!StringUtil.isEmpty(cliOptions.tag))
             cliOptions.rollback = true
         return cliOptions
 
