@@ -524,11 +524,11 @@ publishing {
      }
 }
 
-if(rootDir.toString().contains('rundeckpro')){
+if(rundeckProBuild.toBoolean())){
     apply from: "${projectDir}/../gradle/java.gradle"
 }
 else{
-    apply from: "${rootDir}/gradle/java.gradle"
+    apply from: "${rootDir}/rundeck/gradle/java.gradle"
 }
 
 if (project.hasProperty('signing.keyId') && project.hasProperty('signing.password')) {
