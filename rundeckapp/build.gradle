@@ -524,7 +524,7 @@ publishing {
      }
 }
 
-if(rundeckProBuild.toBoolean())){
+if(rundeckProBuild.toBoolean()){
     apply from: "${projectDir}/../gradle/java.gradle"
 }
 else{
