@@ -525,7 +525,7 @@ publishing {
 }
 
 if(rootDir.toString().contains('rundeckpro')){
-    apply from: "${rootDir}/rundeck/gradle/java.gradle"
+    apply from: "${projectDir}/../gradle/java.gradle"
 }
 else{
     apply from: "${rootDir}/gradle/java.gradle"
