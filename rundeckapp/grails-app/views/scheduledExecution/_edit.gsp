@@ -153,7 +153,7 @@
                     <i class="glyphicon glyphicon-warning-sign text-warning"></i>
                 </g:hasErrors>
                 <g:set var="allowHTML"
-                       value="${!(g.rConfig(value: "gui.job.description.disableHTML", type: 'string') in [true, 'true'])}"/>
+                       value="${!(cfg.getString(config: "gui.job.description.disableHTML") in [true, 'true'])}"/>
                 <div class="help-block">
                     <g:if test="${allowHTML}">
                         <g:render template="/scheduledExecution/description"
