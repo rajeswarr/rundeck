@@ -13,7 +13,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "org.grails:grails-gradle-plugin:$grailsVersion"
+        classpath "org.grails:grails-gradle-plugin:$grailsGradlePluginVersion"
         classpath "gradle.plugin.com.energizedwork:idea-gradle-plugins:1.4"
         classpath "org.grails.plugins:hibernate5:7.0.0"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:$assetPluginVersion"
@@ -58,7 +58,7 @@ configurations {
     implementation.exclude module: "spring-boot-cli"
 
     //avoid error request.XML
-    implementation.exclude group: 'pull-parser'
+    //implementation.exclude group: 'pull-parser'
 
 }
 
