@@ -58,7 +58,7 @@ configurations {
     implementation.exclude module: "spring-boot-cli"
 
     //avoid error request.XML
-    //implementation.exclude group: 'pull-parser'
+    implementation.exclude group: 'pull-parser'
 
 }
 
