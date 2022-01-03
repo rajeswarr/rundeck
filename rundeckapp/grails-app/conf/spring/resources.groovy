@@ -393,7 +393,7 @@ beans={
 
     }
     nodeTaskExecutor(SimpleAsyncTaskExecutor,"NodeService-SourceLoader") {
-        concurrencyLimit = application.config.getProperty("rundeck?.nodeService?.concurrencyLimit", Integer.class, 25) //-1 for unbounded
+        concurrencyLimit = application.config.getProperty("rundeck.nodeService.concurrencyLimit", Integer.class, 25) //-1 for unbounded
     }
     //alternately use ThreadPoolTaskExecutor ...
 //    nodeTaskExecutor(ThreadPoolTaskExecutor) {
