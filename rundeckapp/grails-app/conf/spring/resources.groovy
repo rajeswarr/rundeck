@@ -173,8 +173,8 @@ beans={
 
     if(application.config.getProperty("rundeck.gui.staticUserResources.enabled",Boolean.class,false)) {
         externalStaticResourceConfigurer(ExternalStaticResourceConfigurer) {
-            String filesystemLocation = application.config.getProperty("rundeck.gui.staticUserResources.filesystemLocation", String.class)
-            resourceUriLocation = filesystemLocation.isEmpty() ? "file:${rdeckBase}/user-assets/" : filesystemLocation
+            String filesystemLocation = application.config.getProperty("rundeck.gui.staticUserResources.filesystemLocation", String.class, "")
+            resourceUriLocation = filesystemLocation?.isEmpty() ? "file:${rdeckBase}/user-assets/" : filesystemLocation
         }
     }
 
