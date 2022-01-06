@@ -3,6 +3,9 @@ apply plugin: "groovy"
 dependencies {
     testImplementation "org.codehaus.groovy:groovy-all:${groovyVersion}"
     testImplementation "org.spockframework:spock-core:2.0-groovy-3.0"
+    
+    compileOnly "org.projectlombok:lombok:1.18.20"
+    annotationProcessor "org.projectlombok:lombok:1.18.20"
 }
 
 ext.description= "Rundeck Rundeck project ${project.name}"
