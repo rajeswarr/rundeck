@@ -195,7 +195,7 @@ dependencies {
 //    runtime "org.springframework:spring-test:5.0.3.RELEASE"
 
     runtimeOnly 'org.aspectj:aspectjweaver:1.9.7'
-    runtime "com.h2database:h2:1.4.199"
+    runtimeOnly "com.h2database:h2:1.4.199"
     
     // Database drivers
     runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc:6.4.0.jre8'
