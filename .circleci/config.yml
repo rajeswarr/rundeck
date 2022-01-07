@@ -3,6 +3,106 @@
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
 version: 2.1
+
+slack-fail-post-step: &slack-fail-post-step
+  post-steps:
+    - slack/notify:
+          channel: C01D89KV4JX
+          event: fail
+          custom: |
+            {
+            	"blocks": [
+            		{
+            			"type": "section",
+            			"fields": [
+            				{
+            					"type": "mrkdwn",
+            					"text": ":red_circle: *Job Failed*: ${CIRCLE_JOB}"
+            				}
+            			]
+            		},
+            		{
+            			"type": "context",
+            			"elements": [
+            				{
+            					"type": "mrkdwn",
+            					"text": "*Project*: $CIRCLE_PROJECT_REPONAME"
+            				},
+            				{
+            					"type": "mrkdwn",
+            					"text": "*Branch*: $CIRCLE_BRANCH"
+            				},
+            				{
+            					"type": "mrkdwn",
+            					"text": "*Author*: $CIRCLE_USERNAME"
+            				}
+            			]
+            		},
+            		{
+            			"type": "actions",
+            			"elements": [
+            				{
+            					"type": "button",
+            					"text": {
+            						"type": "plain_text",
+            						"text": "View Job"
+            					},
+            					"url": "${CIRCLE_BUILD_URL}"
+            				}
+            			]
+            		}
+            	]
+            }
+slack-success-post-step: &slack-success-post-step
+  post-steps:
+    - slack/notify:
+          channel: C01D89KV4JX
+          event: pass
+          custom: |
+            {
+            	"blocks": [
+            		{
+            			"type": "section",
+            			"fields": [
+            				{
+            					"type": "mrkdwn",
+            					"text": ":white_check_mark: *Job Success*: ${CIRCLE_JOB}"
+            				}
+            			]
+            		},
+            		{
+            			"type": "context",
+            			"elements": [
+            				{
+            					"type": "mrkdwn",
+            					"text": "*Project*: $CIRCLE_PROJECT_REPONAME"
+            				},
+            				{
+            					"type": "mrkdwn",
+            					"text": "*Branch*: $CIRCLE_BRANCH"
+            				},
+            				{
+            					"type": "mrkdwn",
+            					"text": "*Author*: $CIRCLE_USERNAME"
+            				}
+            			]
+            		},
+            		{
+            			"type": "actions",
+            			"elements": [
+            				{
+            					"type": "button",
+            					"text": {
+            						"type": "plain_text",
+            						"text": "View Job"
+            					},
+            					"url": "${CIRCLE_BUILD_URL}"
+            				}
+            			]
+            		}
+            	]
+            }
+
 orbs:
   docker-publish: circleci/docker-publish@0.1.6
   node: circleci/node@1.1.6
@@ -189,100 +289,6 @@ jobs:
     <<: *defaults
     machine: true
     steps:   
-      - slack/notify:
-          channel: C01D89KV4JX
-          event: fail
-          custom: |
-            {
-            	"blocks": [
-            		{
-            			"type": "section",
-            			"fields": [
-            				{
-            					"type": "mrkdwn",
-            					"text": ":red_circle: *Job Failed*: ${CIRCLE_JOB}"
-            				}
-            			]
-            		},
-            		{
-            			"type": "context",
-            			"elements": [
-            				{
-            					"type": "mrkdwn",
-            					"text": "*Project*: $CIRCLE_PROJECT_REPONAME"
-            				},
-            				{
-            					"type": "mrkdwn",
-            					"text": "*Branch*: $CIRCLE_BRANCH"
-            				},
-            				{
-            					"type": "mrkdwn",
-            					"text": "*Author*: $CIRCLE_USERNAME"
-            				}
-            			]
-            		},
-            		{
-            			"type": "actions",
-            			"elements": [
-            				{
-            					"type": "button",
-            					"text": {
-            						"type": "plain_text",
-            						"text": "View Job"
-            					},
-            					"url": "${CIRCLE_BUILD_URL}"
-            				}
-            			]
-            		}
-            	]
-            }
-      - slack/notify:
-          channel: C01D89KV4JX
-          event: pass
-          custom: |
-            {
-            	"blocks": [
-            		{
-            			"type": "section",
-            			"fields": [
-            				{
-            					"type": "mrkdwn",
-            					"text": ":white_check_mark: *Job Success*: ${CIRCLE_JOB}"
-            				}
-            			]
-            		},
-            		{
-            			"type": "context",
-            			"elements": [
-            				{
-            					"type": "mrkdwn",
-            					"text": "*Project*: $CIRCLE_PROJECT_REPONAME"
-            				},
-            				{
-            					"type": "mrkdwn",
-            					"text": "*Branch*: $CIRCLE_BRANCH"
-            				},
-            				{
-            					"type": "mrkdwn",
-            					"text": "*Author*: $CIRCLE_USERNAME"
-            				}
-            			]
-            		},
-            		{
-            			"type": "actions",
-            			"elements": [
-            				{
-            					"type": "button",
-            					"text": {
-            						"type": "plain_text",
-            						"text": "View Job"
-            					},
-            					"url": "${CIRCLE_BUILD_URL}"
-            				}
-            			]
-            		}
-            	]
-            }
 
   test-docker:
     <<: *defaults
@@ -424,10 +430,14 @@ workflows:
     jobs:
       - build:
           <<: *filter-default
+          <<: *slack-fail-post-step
+          <<: *slack-success-post-step
       - test-gradle:
           <<: *filter-default
           name: Gradle Test
           requires: [build]
+          <<: *slack-fail-post-step
+          <<: *slack-success-post-step
       ## Optimistically build snapshot
       - trigger-enterprise:
           name: Enterprise Snapshot
@@ -453,6 +463,8 @@ workflows:
           <<: *filter-default
           name: API Test
           requires: [build]
+          <<: *slack-fail-post-step
+          <<: *slack-success-post-step
           command: DOCKER_COMPOSE_SPEC=docker-compose-api-mysql.yaml bash test/run-docker-api-tests.sh
       - test-docker:
           <<: *filter-default
@@ -486,6 +498,8 @@ workflows:
       - test-selenium:
           name: Selenium Test
           requires: [build]
+          <<: *slack-fail-post-step
+          <<: *slack-success-post-step
       - test-deps:
           name: OWASP Dependency Checks
           requires: [build]
