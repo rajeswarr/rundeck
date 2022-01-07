@@ -504,6 +504,7 @@ workflows:
             tags: {only: /^v.*$/}
       - slack-notification:
           name: Slack Notification
+          requires: *stage-test
 
 
   nightly:
