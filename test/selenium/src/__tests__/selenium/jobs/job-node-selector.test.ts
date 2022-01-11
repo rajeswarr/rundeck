@@ -4,7 +4,7 @@ import {ProjectCreatePage} from 'pages/projectCreate.page'
 import {LoginPage} from 'pages/login.page'
 import {JobCreatePage} from 'pages/jobCreate.page'
 import {JobShowPage} from "pages/jobShow.page"
-import {until, By, Key, WebElement} from 'selenium-webdriver'
+import {until, By, Key, WebElement, logging} from 'selenium-webdriver'
 import '@rundeck/testdeck/test/rundeck'
 import {sleep} from '@rundeck/testdeck/async/util'
 
@@ -240,16 +240,14 @@ describe('job', () => {
 
         // close modal
         await jobShowPage.closeJobDefinitionModal()
-        await sleep(500)
+        await sleep(5000)
 
-        const showUrl = await ctx.driver.getCurrentUrl()
+        const jobActionDropdown = await jobShowPage.jobActionDropdown()
+        await jobActionDropdown.click()
+        const jobEditButton = await jobShowPage.jobEditButton()
+        await jobEditButton.click()
 
-        // change to edit page
-        const editUrl = showUrl.replace('/job/show', '/job/edit')
-
-        // edit job and verify values are set in form
-
-        await ctx.driver.get(editUrl)
+        await ctx.driver.sleep(1000)
 
         const jobEditPage = new JobCreatePage(ctx, 'SeleniumBasic')
 
@@ -262,10 +260,19 @@ describe('job', () => {
         // save the job
         const save2 = await jobCreatePage.updateButton()
         await save2.click()
+
         await ctx.driver.sleep(5000)
+
+        await ctx.driver.manage().logs().get(logging.Type.BROWSER)
+            .then(function(entries) {
+                entries.forEach(element => {
+                    console.log(element)
+                });
+
+            })
+
         const jobShowPage2 = new JobShowPage(ctx, 'SeleniumBasic', '')
         await jobShowPage2.waitDefinitionNodefilters()
-
         // await ctx.driver.wait(until.urlContains('/job/show'), 15000)
     })
 })
