@@ -47,7 +47,7 @@ def debug=Boolean.getBoolean('debug')?:("-debug" in args)
 def versions=[
         jetty:'9.4.44.v20210927',
         servlet:'api-3.1.0',
-        log4j:'2.17.0'
+        log4j:'2.17.1'
 ]
 
 def warFile= "rundeckapp/${target}/rundeck-${version}.war"
