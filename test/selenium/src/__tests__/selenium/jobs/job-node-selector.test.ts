@@ -264,7 +264,7 @@ describe('job', () => {
         await save2.click()
         await ctx.driver.sleep(5000)
         const jobShowPage2 = new JobShowPage(ctx, 'SeleniumBasic', '')
-        await jobShowPage2.runFormButton()
+        await jobShowPage2.waitDefinitionNodefilters()
 
         // await ctx.driver.wait(until.urlContains('/job/show'), 15000)
     })
