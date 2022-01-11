@@ -191,7 +191,6 @@ describe('job', () => {
 
         await ctx.driver.wait(until.urlContains('/job/show'), 15000)
     })
-    // TODO: fix, test is flaky and fails on CI run
 
     it('rename job with orchestrator', async () => {
         const jobCreatePage: JobCreatePage = await createBasicJob('job with node orchestrator')
@@ -263,8 +262,10 @@ describe('job', () => {
         // save the job
         const save2 = await jobCreatePage.updateButton()
         await save2.click()
-
-        await ctx.driver.wait(until.urlContains('/job/show'), 15000)
+        await ctx.driver.sleep(5000)
         const jobShowPage2 = new JobShowPage(ctx, 'SeleniumBasic', '')
+        await jobShowPage2.runFormButton()
+
+        // await ctx.driver.wait(until.urlContains('/job/show'), 15000)
     })
 })
