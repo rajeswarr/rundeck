@@ -1,6 +1,4 @@
-import {Context} from '@rundeck/testdeck/context'
 import {CreateContext} from '@rundeck/testdeck/test/selenium'
-import {ProjectCreatePage} from 'pages/projectCreate.page'
 import {LoginPage} from 'pages/login.page'
 import {JobCreatePage} from 'pages/jobCreate.page'
 import {JobShowPage} from "pages/jobShow.page"
@@ -265,21 +263,9 @@ describe('job', () => {
         const save2 = await jobEditPage.updateButton()
         await save2.click()
 
-        let showUrl = await ctx.driver.getCurrentUrl()
-
-        console.log(showUrl)
         await ctx.driver.sleep(5000)
-
-        await ctx.driver.manage().logs().get(logging.Type.BROWSER)
-            .then(function(entries) {
-                entries.forEach(element => {
-                    console.log(element)
-                });
-
-            })
 
         const jobShowPage2 = new JobShowPage(ctx, 'SeleniumBasic', '')
         await jobShowPage2.waitDefinitionNodefilters()
-        // await ctx.driver.wait(until.urlContains('/job/show'), 15000)
     })
 })
