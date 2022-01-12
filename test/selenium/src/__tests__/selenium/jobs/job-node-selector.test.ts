@@ -256,11 +256,16 @@ describe('job', () => {
         await nameInput.clear()
         await nameInput.sendKeys('renamed job with node orchestrator')
 
+        await ctx.driver.sleep(1000)
+
         // save and reload
         // save the job
-        const save2 = await jobCreatePage.updateButton()
+        const save2 = await jobEditPage.updateButton()
         await save2.click()
 
+        let showUrl = await ctx.driver.getCurrentUrl()
+
+        console.log(showUrl)
         await ctx.driver.sleep(5000)
 
         await ctx.driver.manage().logs().get(logging.Type.BROWSER)
