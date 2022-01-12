@@ -257,6 +257,8 @@ describe('job', () => {
         await nameInput.sendKeys('renamed job with node orchestrator')
 
         await ctx.driver.sleep(1000)
+        const tabNodes2 = await jobEditPage.tabNodes()
+        await tabNodes2.click()
 
         // save and reload
         // save the job
