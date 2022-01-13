@@ -99,7 +99,7 @@ export class JobShowPage extends Page {
     return await data.click()
   }
   async optionInputText(name: string){
-      return await this.ctx.driver.findElement(By.css(`#optionSelect #_commandOptions input[type=text][name='extra.option.${name}']`))
+    return await this.ctx.driver.findElement(By.css(`#optionSelect #_commandOptions input[type=text][name='extra.option.${name}']`))
   }
   async jobDefinitionOrchestratorText() {
     return this.ctx.driver.findElement(Elems.orchestratorText)
