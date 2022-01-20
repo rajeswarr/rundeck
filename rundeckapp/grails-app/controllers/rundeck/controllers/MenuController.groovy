@@ -267,7 +267,17 @@ class MenuController extends ControllerBase implements ApplicationContextAware{
                 return redirect(controller:'framework',action:'adhoc',params:[project:params.project])
             case 'jobs':
                 return redirect(controller:'menu',action:'jobs', params: [project: params.project])
-            case 'createJob':
+            case 'services':
+                return redirect(controller:'menu',action:'services', params: [project: params.project])
+            case 'jobInstances':
+                return redirect(controller:'menu',action:'jobInstances', params: [project: params.project])         
+            case 'servicesStatus':
+                return redirect(controller:'menu',action:'servicesStatus', params: [project: params.project])
+            case 'crSetup':
+                return redirect(controller:'menu',action:'crSetup', params: [project: params.project])  
+            case 'envUtils':
+                return redirect(controller:'menu',action:'envUtils', params: [project: params.project]) 	    
+	    case 'createJob':
                 return redirect(controller:'scheduledExecution',action: 'create', params: [project: params.project])
             case 'uploadJob':
                 return redirect(controller: 'scheduledExecution', action: 'upload', params: [project: params.project])
@@ -284,6 +294,16 @@ class MenuController extends ControllerBase implements ApplicationContextAware{
     def clearJobsFilter = { ScheduledExecutionQuery query ->
         return redirect(action: 'jobs', params: [project: params.project])
     }
+    def services(ScheduledExecutionQuery query ) {
+    }
+    def jobInstances(ScheduledExecutionQuery query ) {
+    }   
+    def servicesStatus(ScheduledExecutionQuery query ) {
+    } 
+    def crSetup(ScheduledExecutionQuery query ) {  
+    }
+    def evnUtils(ScheduledExecutionQuery query ) {
+    }     
     def jobs (ScheduledExecutionQuery query ){
 
         def User u = userService.findOrCreateUser(session.user)

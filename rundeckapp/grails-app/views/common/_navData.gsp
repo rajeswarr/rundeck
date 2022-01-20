@@ -12,6 +12,36 @@
             <g:set var="wfselected" value="${selectedclass}"/>
         </g:ifPageProperty>
     </g:ifPageProperty>
+    <g:set var="jobInstSelected" value=""/>
+    <g:ifPageProperty name='meta.tabpage'>
+        <g:ifPageProperty name='meta.tabpage' equals='jobInstances'>
+            <g:set var="jobInstSelected" value="${selectedclass}"/>
+        </g:ifPageProperty>
+    </g:ifPageProperty>    
+    <g:set var="srvSelected" value=""/>
+    <g:ifPageProperty name='meta.tabpage'>
+        <g:ifPageProperty name='meta.tabpage' equals='services'>
+            <g:set var="srvSelected" value="${selectedclass}"/>
+        </g:ifPageProperty>
+    </g:ifPageProperty>  
+    <g:set var="srvStatusSelected" value=""/>
+    <g:ifPageProperty name='meta.tabpage'>
+        <g:ifPageProperty name='meta.tabpage' equals='servicesStatus'>
+            <g:set var="srvStatusSelected" value="${selectedclass}"/>
+        </g:ifPageProperty>
+    </g:ifPageProperty> 
+    <g:set var="srvCrSetup" value=""/>
+    <g:ifPageProperty name='meta.tabpage'>
+        <g:ifPageProperty name='meta.tabpage' equals='crSetup'>
+            <g:set var="srvCrSetup" value="${selectedclass}"/>
+        </g:ifPageProperty>
+    </g:ifPageProperty>   
+    <g:set var="srvEvnUtils" value=""/>
+    <g:ifPageProperty name='meta.tabpage'>
+        <g:ifPageProperty name='meta.tabpage' equals='envUtils'>
+            <g:set var="srvEvnUtils" value="${selectedclass}"/>
+        </g:ifPageProperty>
+    </g:ifPageProperty>  
     <g:set var="resselected" value=""/>
     <g:ifPageProperty name='meta.tabpage'>
         <g:ifPageProperty name='meta.tabpage' equals='nodes'>
@@ -82,6 +112,51 @@
                     link: '${createLink(controller: "menu", action: "jobs", params: [project: projectName])}',
                     label: '${g.message(code: "gui.menu.Workflows")}',
                     active: ${wfselected == 'active'},
+                },
+                {
+                    type: 'link',
+                    id: 'nav-job-instances-link',
+                    group: 'main',
+                    class: 'fas fa fa-check-double',
+                    link: '${createLink(controller: "menu", action: "jobInstances", params: [project: projectName])}',
+                    label: '${g.message(code: "gui.menu.JobInstances")}',
+                    active: ${jobInstSelected == 'active'},
+                },
+                {
+                    type: 'link',
+                    id: 'nav-services-link',
+                    group: 'main',
+                    class: 'fas fa fa-check-square',
+                    link: '${createLink(controller: "menu", action: "services", params: [project: projectName])}',
+                    label: '${g.message(code: "gui.menu.Services")}',
+                    active: ${srvSelected == 'active'},
+                },
+                {
+                    type: 'link',
+                    id: 'nav-services-status-link',
+                    group: 'main',
+                    class: 'fas fa-file-alt',
+                    link: '${createLink(controller: "menu", action: "servicesStatus", params: [project: projectName])}',
+                    label: '${g.message(code: "gui.menu.ServicesStatus")}',
+                    active: ${srvStatusSelected == 'active'},
+                },   
+                {
+                    type: 'link',
+                    id: 'nav-cr-setup-link',
+                    group: 'main',
+                    class: 'fas fa-file-alt',
+                    link: '${createLink(controller: "menu", action: "crSetup", params: [project: projectName])}',
+                    label: '${g.message(code: "gui.menu.CrSetup")}',
+                    active: ${srvCrSetup == 'active'},
+                },
+                {
+                    type: 'link',
+                    id: 'nav-envutils-link',
+                    group: 'main',
+                    class: 'fas fa-file-alt',
+                    link: '${createLink(controller: "menu", action: "envUtils", params: [project: projectName])}',
+                    label: '${g.message(code: "gui.menu.EnvUtils")}',
+                    active: ${srvEvnUtils == 'active'},
                 },
                 {
                     type: 'link',
