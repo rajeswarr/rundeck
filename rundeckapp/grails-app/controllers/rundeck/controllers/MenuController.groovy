@@ -302,7 +302,7 @@ class MenuController extends ControllerBase implements ApplicationContextAware{
     } 
     def crSetup(ScheduledExecutionQuery query ) {  
     }
-    def evnUtils(ScheduledExecutionQuery query ) {
+    def envUtils(ScheduledExecutionQuery query ) {
     }     
     def jobs (ScheduledExecutionQuery query ){
 
