@@ -254,7 +254,7 @@ class MenuController extends ControllerBase implements ApplicationContextAware{
         if (!params.project) {
             return redirect(controller: 'menu', action: 'home')
         }
-        def startpage = params.page?: grailsApplication.config.rundeck.gui.startpage ?: 'jobs'
+        def startpage = params.page?: grailsApplication.config.rundeck.gui.startpage ?: 'services'
         switch (startpage){
             case 'home':
                 return redirect(controller: 'menu', action: 'home')
