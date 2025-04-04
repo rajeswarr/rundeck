@@ -75,11 +75,11 @@
                   </span>
                   <span v-if="editFocus===index">
                     <a
-                      class="btn btn-cta btn-xs"
+                      class="btn btn-cta btn-xs margin-right-16"
                       @click="savePlugin(plugin,index)"
                       :key="'save'"
                     >{{$t('Save')}}</a>
-                    <a class="btn btn-warning btn-xs" @click="editFocus=-1">{{$t('Cancel')}}</a>
+                    <a class="btn btn-primary btn-xs" @click="editFocus=-1">{{$t('Cancel')}}</a>
                   </span>
                   <span class="small text-info" v-if="plugin.modified">
                     <i class="fas fa-pen-square"></i>

@@ -92,7 +92,7 @@
     <!-- <div class="full-page login-page" data-color="" data-image="static/img/background/background-2.jpg"> -->
       <div class="content">
         <div class="container">
-          <div class="row">
+          <div class="row login-row">
             <cfg:setVar var="userDefinedInstanceName" key="gui.instanceName" />
             <g:if test="${userDefinedInstanceName}">
               <div class="col-md-12" style="text-align:center;margin-bottom:3em;">
@@ -101,17 +101,29 @@
                   </span>
               </div>
             </g:if>
-            <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+			
+			<div class="col-sm-6">
+      <div class="oto_login_image">
+      <div class="oto-intro">
+      <p>One Touch Ops is runbook automation that gives you and your colleagues self-service access to the processes and tools they need to get their job done.</p>
+      <a href="#" onclick='openIntro()'>Learn More</a></div>
+			 %{--<asset:image src="static/img/onetouchops_login_image.svg" alt="One Touch Ops" onload="SVGInject(this)"/>--}%
+       </div>
+			</div>
+			
+			
+            <div class="col-sm-6">
               <form action="${g.createLink(uri:"/j_security_check")}" method="post" class="form " role="form" onsubmit="return onLoginClicked()">
                 <div class="card" data-background="color" data-color="blue">
                   <div class="card-header">
                     <h3 class="card-title">
                       <div class="logo">
                           <g:set var="logoImage" value="${g.message(code: 'app.login.logo', default: '')?:'static/img/rundeck-combination.svg'}"/>
-                          <a href="${grailsApplication.config.rundeck.gui.titleLink ? enc(attr:grailsApplication.config.rundeck.gui.titleLink) : g.createLink(uri: '/')}" title="Home">
-                            <asset:image src="${logoImage}" alt="Rundeck" style="width: 200px;" onload="SVGInject(this)"/>
+                          <a href="${grailsApplication.config.rundeck.gui.titleLink ? enc(attr:grailsApplication.config.rundeck.gui.titleLink) : g.createLink(uri: '/')}" title="One Touch Ops">
+                           %{-- <asset:image src="${logoImage}" class="oto_logo" alt="One Touch Ops" onload="SVGInject(this)"/>--}%
+                              <div class="oto-logo"></div>
                           </a>
-%{--                          <asset:image src="${g.message(code: 'app.login.logo')}"/>--}%
+						            %{--<asset:image src="${g.message(code: 'app.login.logo')}"/>--}%
                           <g:set var="userDefinedLogo" value="${grailsApplication.config.rundeck?.gui?.logo}"/>
                           <g:if test="${userDefinedLogo}">
                             <g:set var="userAssetBase" value="/user-assets" />
@@ -156,13 +168,13 @@
                       </div>
                     </g:if>
                     <div class="form-group">
-                        <label for="login"><g:message code="user.login.username.label"/></label>
-                        <input type="text" name="j_username" id="login" class="form-control input-no-border" autofocus="true"/>
+                        %{-- <label for="login"><g:message code="user.login.username.label"/></label> --}%
+                        <input type="text" name="j_username" placeholder="Username" id="login" class="form-control input-no-border" autofocus="true"/>
                     </div>
 
                     <div class="form-group">
-                        <label for="password"><g:message code="user.login.password.label"/></label>
-                        <input type="password" name="j_password" id="password" class="form-control input-no-border" autocomplete="off"/>
+                       %{-- <label for="password"><g:message code="user.login.password.label"/></label> --}%
+                        <input type="password" placeholder="Password" name="j_password" id="password" class="form-control input-no-border" autocomplete="off"/>
                     </div>
                         <div class="card-footer text-center">
                             <button type="submit" id="btn-login" class="btn btn-fill btn-wd btn-cta"><g:message code="user.login.login.button"/></button>
@@ -221,8 +233,169 @@
             spinner.show()
             return true
           }
+           let themeColor = JSON.parse(localStorage.getItem('theme-user-preferences')) ? JSON.parse(localStorage.getItem('theme-user-preferences'))?.theme : 'purple';
+          document.querySelector('html')?.removeAttribute('class');
+          document.querySelector('html')?.classList.add(themeColor);
       </script>
     <g:render template="/common/footer"/>
   </div>
+
+
+
+
+<!--OneTouchOps Intro starts-->
+<div id="introDiv" class="intro-modal d-none fade-in">
+  <div class="intro-container">
+  <div class="close"><button onclick="closeIntro();" type="button" class="close">&times;</button></div>
+  <div class="intro-logo"></div>
+
+  <div class="intro-content-body">
+  <!-- Slide One starts-->
+  <div id="slideOne" style="display:block">
+   <div class="intro-slide fade-in-slide">
+    <div class="intro-image one"></div>
+    <div class="intro-content">
+    <h1>Welcome to One Touch Ops!</h1>
+    <p>One Touch Ops is runbook automation that gives you and your colleagues self-service access to the processes and tools they need to get their job done.</p>
+    <p>When used for incident management, One Touch Ops will help you have shorter incidents and fewer escalations.</p> 
+    <p>When used for general operations work, One Touch Ops will help alleviate the time-consuming and repetitive toil that currently consumes too much of your team's time.</p>
+    </div>
+    </div>
+	</div>
+ <!-- slide one ends -->
+
+ <!-- Slide Two starts-->
+  <div id="slideTwo" style="display:none">
+  <div class="intro-slide fade-in-slide">
+    <div class="intro-image two"></div>
+    <div class="intro-content">
+    <h1>Create new project</h1>
+    <p>One Touch Ops is runbook automation that gives you and your colleagues self-service access to the processes and tools they need to get their job done.</p>
+    <p>When used for incident management, One Touch Ops will help you have shorter incidents and fewer escalations.</p> 
+    <p>When used for general operations work, One Touch Ops will help alleviate the time-consuming and repetitive toil that currently consumes too much of your team's time.</p>
+    </div>
+    </div>
+	</div>
+ <!-- slide Two ends -->
+
+ <!-- Slide Three starts-->
+  <div id="slideThree" style="display:none">
+  <div class="intro-slide fade-in-slide">
+    <div class="intro-image three"></div>
+    <div class="intro-content">
+    <h1>Well done let's sart your journey!</h1>
+    <p>One Touch Ops is runbook automation that gives you and your colleagues self-service access to the processes and tools they need to get their job done.</p>
+    <p>When used for incident management, One Touch Ops will help you have shorter incidents and fewer escalations.</p> 
+    <p>When used for general operations work, One Touch Ops will help alleviate the time-consuming and repetitive toil that currently consumes too much of your team's time.</p>
+    </div>
+    </div>
+	</div>
+ <!-- slide Three ends -->
+
+ </div>
+
+<!--Slide Footer 1 Starts-->
+    <div id="slideFooterOne" class="intro-footer">
+      <div class="dots">
+      <span class="dot active"></span>
+      <span onclick="nextSlide();" class="dot"></span>
+      <span onclick="dotSlideOne();" class="dot"></span>
+      </div>
+      <div class="intro-buttons">
+        <button onclick="closeIntro();" class="btn btn-primary skip-btn">Skip</button>
+        <button onclick="nextSlide();" class="btn btn-cta next-btn">Next</button>
+      </div>
+  </div>
+  <!--Slide Footer 1 Ends-->
+
+  <!--Slide Footer 2 Starts-->
+    <div id="slideFooterTwo" class="intro-footer" style="display:none">
+      <div class="dots">
+      <span onclick="backSlide();" class="dot"></span>
+      <span class="dot active"></span>
+      <span onclick="nextSlideOne();" class="dot"></span>
+      </div>
+      <div class="intro-buttons">
+        <button onclick="backSlide();" class="btn btn-primary skip-btn">Back</button>
+        <button onclick="nextSlideOne();" class="btn btn-cta next-btn">Next</button>
+      </div>
+  </div>
+  <!--Slide Footer 2 Ends-->
+
+
+  <!--Slide Footer 3 Starts-->
+    <div id="slideFooterThree" class="intro-footer" style="display:none">
+      <div class="dots">
+      <span onclick="dotSlideTwo();" class="dot"></span>
+      <span onclick="backSlideOne();" class="dot"></span>
+      <span class="dot active"></span>
+      </div>
+      <div class="intro-buttons">
+        <button onclick="backSlideOne();" class="btn btn-primary skip-btn">Back</button>
+        <button onclick="closeIntro();" class="btn btn-cta next-btn">Get Started</button>
+      </div>
+  </div>
+  <!--Slide Footer 3 Ends-->
+
+  </div>
+</div>
+
+<!--OneTouchOps Intro starts ends-->
+
+<script type="text/javascript">
+function openIntro() {
+  document.getElementById('introDiv').style.display = "block";
+}
+function closeIntro() {
+  document.getElementById('introDiv').style.display = "none";
+}
+function nextSlide() {
+  document.getElementById('slideOne').style.display = "none";
+  document.getElementById('slideFooterOne').style.display = "none";
+  document.getElementById('slideTwo').style.display = "block";
+  document.getElementById('slideFooterTwo').style.display = "flex";
+}
+function backSlide() {
+  document.getElementById('slideOne').style.display = "block";
+  document.getElementById('slideFooterOne').style.display = "flex";
+  document.getElementById('slideTwo').style.display = "none";
+  document.getElementById('slideFooterTwo').style.display = "none";
+}
+function nextSlideOne() {
+  document.getElementById('slideTwo').style.display = "none";
+  document.getElementById('slideFooterTwo').style.display = "none";
+  document.getElementById('slideThree').style.display = "block";
+  document.getElementById('slideFooterThree').style.display = "flex";
+}
+function backSlideOne() {
+  document.getElementById('slideThree').style.display = "none";
+  document.getElementById('slideFooterThree').style.display = "none";
+  document.getElementById('slideTwo').style.display = "block";
+  document.getElementById('slideFooterTwo').style.display = "flex";
+}
+//dots clickable functions
+function dotSlideOne() {
+  document.getElementById('slideOne').style.display = "none";
+  document.getElementById('slideFooterOne').style.display = "none";
+  document.getElementById('slideTwo').style.display = "none";
+  document.getElementById('slideFooterTwo').style.display = "none";
+  document.getElementById('slideThree').style.display = "block";
+  document.getElementById('slideFooterThree').style.display = "flex";
+}
+function dotSlideTwo() {
+  document.getElementById('slideOne').style.display = "block";
+  document.getElementById('slideFooterOne').style.display = "flex";
+  document.getElementById('slideTwo').style.display = "none";
+  document.getElementById('slideFooterTwo').style.display = "none";
+  document.getElementById('slideThree').style.display = "none";
+  document.getElementById('slideFooterThree').style.display = "none";
+}
+
+
+
+
+</script>
+
+
 </body>
 </html>

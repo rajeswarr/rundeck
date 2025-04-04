@@ -572,7 +572,7 @@ search
 
 
               <div class="row">
-                  <div class="col-sm-12">
+                  <div class="col-sm-12 p-0">
                       <div class="card card-plain " data-ko-bind="nodeflow">
                           <div class="btn-group " data-bind="if: views().length>2">
                               <button class="btn btn-default btn-sm dropdown-toggle "
@@ -828,7 +828,7 @@ search
                            data-mode="normal"
                            data-bind="attr: {'data-mode': logoutput().options.styleMode }, css: {'exec-output-bg': activeTab()==='output' }">
 
-                          <div class="card-content " data-bind="css: {tight: activeTab().startsWith('output') }">
+                          <div class="card-content" data-bind="css: {tight: activeTab().startsWith('output') }">
                               <g:render template="/common/messages"/>
 
 
@@ -895,7 +895,7 @@ search
                       action: AuthConstants.ACTION_READ,
                       kind: AuthConstants.TYPE_EVENT
               )}"/>
-              <div class="col-sm-12">
+              <div class="col-sm-12 p-0">
 
                   <div class="card" id="activity_section">
                       <div class="card-content">

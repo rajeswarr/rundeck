@@ -35,6 +35,12 @@
         <g:ifPageProperty name='meta.tabpage' equals='crSetup'>
             <g:set var="srvCrSetup" value="${selectedclass}"/>
         </g:ifPageProperty>
+    </g:ifPageProperty>
+    <g:set var="srvReports" value=""/>
+    <g:ifPageProperty name='meta.tabpage'>
+        <g:ifPageProperty name='meta.tabpage' equals='reports'>
+            <g:set var="srvReports" value="${selectedclass}"/>
+        </g:ifPageProperty>
     </g:ifPageProperty>   
     <g:set var="srvEvnUtils" value=""/>
     <g:ifPageProperty name='meta.tabpage'>
@@ -148,6 +154,15 @@
                     link: '${createLink(controller: "menu", action: "crSetup", params: [project: projectName])}',
                     label: '${g.message(code: "gui.menu.CrSetup")}',
                     active: ${srvCrSetup == 'active'},
+                },
+                 {
+                    type: 'link',
+                    id: 'nav-reports-link',
+                    group: 'main',
+                    class: 'fas fa-file-alt',
+                    link: '${createLink(controller: "menu", action: "reports", params: [project: projectName])}',
+                    label: '${g.message(code: "gui.menu.reports")}',
+                    active: ${srvReports == 'active'},
                 },
                 {
                     type: 'link',

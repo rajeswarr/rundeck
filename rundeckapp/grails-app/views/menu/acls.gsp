@@ -180,7 +180,7 @@
                       </span>
                       <g:if test="${hasCreateAuth}">
                           <div class="btn-group pull-right">
-                              <span class="btn btn-sm btn-default" data-toggle="modal" data-target="#aclFSUpload">
+                              <span class="btn btn-sm btn-default margin-right-16" data-toggle="modal" data-target="#aclFSUpload">
                                   <g:icon name="upload"/>
                                   <g:message code="button.action.Upload"/>
                               </span>
@@ -239,7 +239,7 @@
                   </h3>
                   <g:if test="${hasCreateAuth}">
                       <div class="btn-group pull-right">
-                          <span class="btn btn-sm btn-default" data-toggle="modal" data-target="#aclStorageUpload"
+                          <span class="btn btn-sm btn-default margin-right-16" data-toggle="modal" data-target="#aclStorageUpload"
                                 id="storage_acl_upload_btn">
                               <g:icon name="upload"/>
                               <g:message code="button.action.Upload"/>

@@ -62,7 +62,7 @@
             id="genPageData"/>
 </head>
 <body>
-<div class="content">
+<div class="content oto-profile">
 <div id="layoutBody">
 <div class="container-fluid">
   <input id="loginName" name="loginName" type="hidden" value="${user.login}">

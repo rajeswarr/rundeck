@@ -4,24 +4,40 @@ import {RundeckClient} from '@rundeck/client'
 import {RootStore} from './RootStore'
 
 export enum Theme {
-    system = "system",
-    dark = "dark",
-    light = "light"
+    // system = "system",
+    // dark = "dark",
+    // light = "light",
+    purple = "purple",
+    green = "green",
+    maroon = "maroon",
+    azure = "azure",
+ // pnight = "pnight",
+    violet= "violet",
+    black= "black"
+
 }
 
 export enum PrefersColorScheme {
-    dark = 'dark',
-    light = 'light'
+    // dark = 'dark',
+    // light = 'light',
+    purple = "purple",
+    green = "green",
+    maroon = "maroon",
+    azure = "azure",
+ // pnight = "pnight",
+    violet= "violet",
+    black= "black"
 }
 
 interface UserPreferences {
     theme?: Theme
 }
 
-const THEME_USER_PREFERENCES_KEY = 'theme-user-preferences'
+const THEME_USER_PREFERENCES_KEY = 'theme-user-preferences';
+
 
 export class ThemeStore {
-    @observable userPreferences: UserPreferences = {theme: Theme.system}
+    @observable userPreferences: UserPreferences = {theme: Theme.purple}
     @observable theme!: Theme
     @observable prefersColorScheme!: PrefersColorScheme 
 
@@ -30,8 +46,9 @@ export class ThemeStore {
     constructor() {
         this.loadConfig()
         this.setTheme()
+        this.loadLogo();
 
-        this.themeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+        this.themeMediaQuery = window.matchMedia('(prefers-color-scheme: purple)')
         this.handleSystemChange(this.themeMediaQuery)
 
         // Safari <14
@@ -49,7 +66,7 @@ export class ThemeStore {
     }
 
     setTheme() {
-        if (this.userPreferences.theme == Theme.system)
+        if (this.userPreferences.theme == Theme.purple)
             this.theme = Theme[this.prefersColorScheme]
         else
             this.theme = this.userPreferences.theme!
@@ -59,9 +76,9 @@ export class ThemeStore {
 
     handleSystemChange = (e: MediaQueryListEvent | MediaQueryList) => {
         if (e.matches)
-            this.prefersColorScheme = PrefersColorScheme.dark
+            this.prefersColorScheme = PrefersColorScheme.green
         else
-            this.prefersColorScheme = PrefersColorScheme.light
+            this.prefersColorScheme = PrefersColorScheme.purple
 
         this.setTheme()
     }
@@ -80,6 +97,25 @@ export class ThemeStore {
     }
 
     saveConfig() {
-        localStorage.setItem(THEME_USER_PREFERENCES_KEY, JSON.stringify(this.userPreferences))
-      }
+        if(this.userPreferences) {
+            localStorage.setItem(THEME_USER_PREFERENCES_KEY, JSON.stringify(this.userPreferences));
+        }
+        else {
+            localStorage.setItem(THEME_USER_PREFERENCES_KEY, JSON.stringify({theme: Theme.purple}));
+        }
+        this.loadLogo();
+    }
+
+    loadLogo() {
+        console.log(localStorage.getItem('theme-user-preferences'));
+        let themeColor = JSON.parse(localStorage.getItem('theme-user-preferences') || '{}') ? JSON.parse(localStorage.getItem('theme-user-preferences') || '{}')?.theme : 'purple';
+        console.log(themeColor);
+        document.querySelector('html')?.removeAttribute('class');
+       // document.querySelector('html')?.classList.add(themeColor);
+        if(themeColor) {
+            document.querySelector('html')?.classList.add(themeColor);
+        } else{
+            document.querySelector('html')?.classList.add('purple');
+        }
+    }
 }

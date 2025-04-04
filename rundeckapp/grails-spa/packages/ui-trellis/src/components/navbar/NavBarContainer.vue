@@ -51,7 +51,7 @@ export default class NavBarContainer extends Vue {
     }
 
     get label(): string {
-        return this.item!.label!.toUpperCase()
+        return this.item!.label!
     }
 }
 </script>

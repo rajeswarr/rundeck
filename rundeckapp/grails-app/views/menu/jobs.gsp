@@ -469,7 +469,7 @@ search
                         </g:else>
                     </g:if>
                     <g:else>
-                        All Jobs
+                        Total Jobs
                     </g:else>
 
                 </a>

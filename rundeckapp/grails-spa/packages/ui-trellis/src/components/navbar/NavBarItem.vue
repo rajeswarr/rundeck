@@ -29,7 +29,7 @@ export default Vue.extend({
     },
     computed: {
         label(): string {
-            return this.item!.label!.toUpperCase()
+            return this.item!.label!
         }
     }
 })

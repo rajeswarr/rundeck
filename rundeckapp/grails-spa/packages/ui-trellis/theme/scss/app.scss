@@ -1,14 +1,17 @@
 // Import first so they can be wired into the bootstrap scss
 @import "_theme";
 
+//One Touch Ops Custom Theme and Layout CSS by IVY start
+@import "custom/onetouchops";
+@import "custom/oto-theme-images";
+//One Touch Ops Custom Theme and Layout CSS by IVY end
+
 @import "runstrap/variables";
 @import "runstrap/mixins";
-
 // Reset and dependencies
 @import "runstrap/normalize";
 @import "runstrap/print";
 @import "runstrap/glyphicons";
-
 // Core CSS
 @import "runstrap/layouts";
 @import "runstrap/scaffolding";
@@ -29,7 +32,6 @@
 @import "runstrap/select";
 @import "runstrap/chat-message";
 @import "runstrap/checkbox-radio";
-
 // Components
 @import "runstrap/component-animations";
 @import "runstrap/dropdown";
@@ -52,7 +54,6 @@
 @import "runstrap/responsive-embed";
 @import "runstrap/wells";
 @import "runstrap/close";
-
 // Fancy Stuff
 @import "runstrap/social";
 @import "runstrap/tags";
@@ -60,17 +61,14 @@
 @import "runstrap/animated-buttons";
 @import "runstrap/switch";
 @import "runstrap/storybook";
-
 // Components w/ JavaScript
 @import "runstrap/modals";
 @import "runstrap/tooltip-and-popovers";
 @import "runstrap/popovers";
 @import "runstrap/carousel";
-
 // Utility classes
 @import "runstrap/utilities";
 @import "runstrap/responsive-utilities";
-
 //plugins css
 @import "runstrap/plugins/animate";
 @import "runstrap/plugins/fullcalendar";
@@ -78,26 +76,18 @@
 @import "runstrap/plugins/perfect-scrollbar";
 @import "runstrap/plugins/jquery.jvectormap";
 @import "~perfect-scrollbar/css/perfect-scrollbar.css";
-
 //SCSS for Pages
 @import "runstrap/pages";
-
 @import "runstrap/tabs-navs-pagination";
 @import "runstrap/circlechart";
- 
 @import "runstrap/responsive";
-
 // UI Next Layout
 @import "runstrap/view";
-
-
 // Font Awesome 5
 @import "fontawesome/fontawesome";
 @import "fontawesome/regular";
 @import "fontawesome/solid";
 @import "fontawesome/brands";
-
-
 // CUSTOM
 @import "custom/rundeck-icon";
 @import "custom/mainbar";
@@ -142,13 +132,11 @@
 @import "custom/plugin-config";
 @import "custom/ace-editor";
 @import "custom/logo";
-
 // PAGES
 @import "pages/login";
 @import "pages/page_storage";
 @import "pages/nodes";
 @import "pages/jobs";
 @import "pages/four-oh-four";
-
 // COMPONENTS
 @import "custom/community-news-sidebar";

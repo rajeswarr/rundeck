@@ -17,7 +17,7 @@
                 of
                 </span>
 
-                <a :href="activityHref" class="link-quiet">
+                <a :href="activityHref" class="link-quiet btn btn-primary">
                   <span class="summary-count" :class="{ 'text-strong': pagination.total < 1, 'text-info': pagination.total > 0 }" v-if="pagination.total>=0">
                     {{pagination.total}}
                   </span>

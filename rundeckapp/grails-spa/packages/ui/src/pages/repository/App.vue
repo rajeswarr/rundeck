@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container">
+  <div id="app" class="container oto-plugins">
     <Overlay/>
     <router-view></router-view>
   </div>

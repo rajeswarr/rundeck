@@ -14,12 +14,12 @@
     >
       <form style="padding: 10px;">
         <div class="form-group">
-          <label>Theme</label>
+          <!-- <label>Theme</label>
           <select class="form-control select"
             v-model="settings.theme"
           >
             <option v-for="themeOpt in themes" :key="themeOpt.value" :value="themeOpt.value">{{themeOpt.label}}</option>
-          </select>
+          </select> -->
         </div>
         <div class="checkbox">
           <input type="checkbox" v-model="settings.gutter" id="logview_gutter">

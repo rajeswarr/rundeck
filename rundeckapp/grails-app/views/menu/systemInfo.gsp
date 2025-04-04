@@ -31,16 +31,16 @@
 </head>
 
 <body>
-<div class="content">
+<div class="content oto-systeminfo">
 <div id="layoutBody">
   <div class="container-fluid">
   <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 p-0">
             <g:render template="/common/messages"/>
         </div>
     </div>
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12 p-0">
         <g:if test="${schedulerThreadRatio && schedulerThreadRatio>=1.0}">
           <div class="alert alert-warning alert-dismissable">
             <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
@@ -64,11 +64,11 @@
             <h4 class="card-title">
               <g:message code="gui.menu.SystemInfo" />
               <div class="btn-group pull-right">
-                <g:link uri='/metrics/metrics?pretty=true' class="btn btn-sm btn-info" title="View JSON metrics data" target="_blank">
+                <g:link uri='/metrics/metrics?pretty=true' class="btn btn-sm btn-info margin-right-16" title="View JSON metrics data" target="_blank">
                   Metrics (json)
                   <i class="glyphicon glyphicon-file"></i>
                 </g:link>
-                <g:link uri='/metrics/threads' class="btn btn-sm btn-info" title="View Java thread dump"  target="_blank">
+                <g:link uri='/metrics/threads' class="btn btn-sm btn-info margin-right-16" title="View Java thread dump"  target="_blank">
                   Thread Dump
                   <i class="glyphicon glyphicon-file"></i>
                 </g:link>

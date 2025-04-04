@@ -216,11 +216,20 @@
 <g:set var="projectName" value="${params.project ?: request.project}"/>
 
 <section id="section-main" class="${projectName ? 'with-project' : ''}">
-    <g:if test="${projectName}">
-        <section id="section-navbar">
-            <div id="navbar"/>
-        </section>
-    </g:if>
+<g:if test="${projectName}">
+    <section id="section-navbar">
+        <div id="navbar"/>
+    </section>
+
+    <section class="section-toggle">
+    <div id="section-toggle-left">
+            <i class="fas fa-caret-left left-traingle"></i>
+        </div>
+        <div  style="display: none;" id="section-toggle-right">
+            <i class="fas fa-caret-right right-traingle"></i>
+    </div>
+    </section>
+</g:if>
 
     <section id="section-content">
         <g:ifPageProperty name="page.subtitle">
@@ -263,7 +272,7 @@
     </section>
 </section>
 
-<section id="section-header" style="background-color: red;">
+<section id="section-header">
     <g:render template="/common/mainbar"/>
 </section>
 
@@ -292,6 +301,36 @@
 </g:if>
 
 <!-- /VUE JS MODULES -->
+
+<!--Left Menu toggle click event-->
+<script type="text/javascript">
+
+    // console.log('kjajsdlcSjdcjsdjbdscszjdjsd');
+
+      if (document) {
+        document.getElementsByClassName("section-toggle")[0]?.addEventListener('click', () => {
+            if (document.getElementById('section-toggle-right').style.display == 'block') {
+                //console.log('inside right');
+             document.getElementById('section-toggle-right').style.display = 'none';
+             document.getElementById('section-toggle-left').style.display = 'block';
+             document.getElementById('section-navbar').style.display = 'block';
+             document.getElementsByClassName("section-toggle")[0]?.classList.remove('toggle-nav');
+             if (document.querySelector('.select-ser-btn')) {
+                document.querySelector('.select-ser-btn').classList.remove('active');
+             }
+            } else {
+             document.getElementById('section-toggle-left').style.display = 'none';
+             document.getElementById('section-navbar').style.display = 'none';
+             document.getElementsByClassName("section-toggle")[0].classList.add('toggle-nav');
+             document.getElementById('section-toggle-right').style.display = 'block';
+             if (document.querySelector('.select-ser-btn')) {
+                document.querySelector('.select-ser-btn').classList.add('active');
+             }
+            }
+        });
+      }
+</script>
+
 </body>
 
 </html>

@@ -1,0 +1,1607 @@
+
+/******************** purple snow theme asstes **********************/
+html.purple #loginpage .oto-intro {
+    background-image: url("../images/logos/oto-login-image-blue.svg");
+}
+html.purple body#loginpage .oto-logo,
+html.purple .intro-container .intro-logo,
+html.purple .intro-container .intro-logo {
+    background-image: url("../images/logos/oto-logo-blue.svg");
+}
+html.purple .intro-image.one {
+    background-image: url("../images/logos/oto-guide-1-blue.svg");
+}
+html.purple .intro-image.two {
+    background-image: url("../images/logos/oto-guide-2-blue.svg");
+}
+html.purple .intro-image.three {
+    background-image: url("../images/logos/oto-guide-3-blue.svg");
+}
+html.purple .rdicon.app-logo {
+    background-image: url("../images/logos/rundecklogo.svg");
+}
+
+::-webkit-scrollbar-thumb {
+    background: #A798B3!important 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #b1a3bd!important 
+}
+/******************** green light theme assets **********************/
+html.green #loginpage .oto-intro {
+    background-image: url("../images/logos/oto-login-image-green.svg");
+}   
+html.green body#loginpage .oto-logo,
+html.green .intro-container .intro-logo,
+html.green .intro-container .intro-logo {
+    background-image: url("../images/logos/oto-logo-green.svg");
+}
+html.green .intro-image.one {
+    background-image: url("../images/logos/oto-guide-1-green.svg");
+}
+html.green .intro-image.two {
+    background-image: url("../images/logos/oto-guide-2-green.svg");
+}
+html.green .intro-image.three {
+    background-image: url("../images/logos/oto-guide-3-green.svg");
+}
+html.green .rdicon.app-logo {
+    background-image: url("../images/logos/rundecklogo-green.svg");
+}
+::-webkit-scrollbar-thumb{
+    background: #8FA39D!important 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #96a8a3!important 
+}
+
+
+/******************** maroon ash theme assets **********************/
+   
+html.maroon body#loginpage .oto-logo,
+html.maroon .intro-container .intro-logo,
+html.maroon .intro-container .intro-logo {
+    background-image: url("../images/logos/oto-logo-maroon.svg");
+}
+html.maroon .rdicon.app-logo {
+    background-image: url("../images/logos/rundecklogo-maroon.svg");
+}
+html.maroon .intro-image.one {
+    background-image: url("../images/logos/oto-guide-1-maroon.svg");
+}
+html.maroon .intro-image.two {
+    background-image: url("../images/logos/oto-guide-2-maroon.svg");
+}
+html.maroon .intro-image.three {
+    background-image: url("../images/logos/oto-guide-3-maroon.svg");
+}
+html.maroon #loginpage .oto-intro {
+    background-image: url("../images/logos/oto-login-image-maroon.svg");
+}
+html.maroon .intro-container {
+    background-color: #E5E5E5!important;
+}
+::-webkit-scrollbar-thumb {
+    background: #999596!important 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #9c9a9c!important 
+}
+
+/******************** azure silver theme assets **********************/
+   
+html.azure body#loginpage .oto-logo,
+html.azure .intro-container .intro-logo,
+html.azure .intro-container .intro-logo {
+    background-image: url("../images/logos/oto-logo-azure.svg");
+}
+html.azure .rdicon.app-logo {
+    background-image: url("../images/logos/rundecklogo-azure.svg");
+}
+html.azure .intro-image.one {
+    background-image: url("../images/logos/oto-guide-1-azure.svg");
+}
+html.azure .intro-image.two {
+    background-image: url("../images/logos/oto-guide-2-azure.svg");
+}
+html.azure .intro-image.three {
+    background-image: url("../images/logos/oto-guide-3-azure.svg");
+}
+html.azure #loginpage .oto-intro {
+    background-image: url("../images/logos/oto-login-image-azure.svg");
+}
+html.azure .intro-container {
+    background-color: #E5E5E5!important;
+}
+html.azure .serviceNameblock {
+    background-color: #8B8D99!important;
+} 
+html.azure div.child span {
+  background-color: var(--light-grey-bg)!important;
+}
+html.azure .card, 
+html.azure .layout-wizard,
+html.azure .navbar__item--active,
+html.azure .nav-tabs>li.active>a, 
+html.azure .nav-tabs>li.active>a:focus, 
+html.azure .nav-tabs>li.active>a:hover,
+html.azure #section-content,
+html.azure button.project-select-btn,
+html.azure .vue-tabs .nav-tabs>li>a:hover,
+html.azure .btn.btn-md, 
+html.azure .btn.btn-primary, 
+html.azure .btn.btn-secondary,
+html.azure .btn-default  {
+    background-color: #D7DAE1!important;
+}
+html.azure .gencr-border {
+    background: #E9EBEF;
+}
+html.azure .vue-tabs .nav-tabs-wrapper {
+    margin-bottom: -3px!important;
+}
+html.azure .card-content-full-width table.table.table-hover.table-condensed tr {
+    color: #000!important;
+}
+html.azure .text-muted,
+html.azure .nodedetail .key {
+    color: #545454!important;
+}
+html.azure .btn.btn-md:hover, 
+html.azure .btn.btn-primary:hover, 
+html.azure .btn.btn-secondary:hover,
+html.azure .btn-default:hover {
+    background: var(--table-header)!important;
+}
+html.azure .dropdown-toggle.btn.btn-secondary, 
+html.azure .dropdown-toggle.btn.btn-secondary:hover, 
+html.azure span[data-v-51846ea2] span.btn-secondary, 
+html.azure span[data-v-51846ea2] span.btn-secondary:hover,
+html.azure button.btn-info, 
+html.azure button.btn-warning {
+    background: var(--primary-button)!important;
+}
+html.azure .instanceHeadMainblock {
+    background-color: #d7dae1!important;
+}
+/******************** purple night theme assets **********************/
+
+html.pnight body#loginpage .oto-logo,
+html.pnight .intro-container .intro-logo,
+html.pnight .intro-container .intro-logo {
+    background-image: url("../images/logos/oto-logo-pnight.svg");
+}
+html.pnight .rdicon.app-logo {
+    background-image: url("../images/logos/rundecklogo-pnight.svg");
+}
+html.pnight .intro-image.one {
+    background-image: url("../images/logos/oto-guide-1-pnight.svg");
+}
+html.pnight .intro-image.two {
+    background-image: url("../images/logos/oto-guide-2-pnight.svg");
+}
+html.pnight .intro-image.three {
+    background-image: url("../images/logos/oto-guide-3-pnight.svg");
+}
+html.pnight #loginpage .oto-intro {
+    background-image: url("../images/logos/oto-login-image-pnight.svg");
+}
+html.pnight .card,
+html.pnight .layout-wizard,
+html.pnight #section-content,
+html.pnight .panel-body {
+    background-color: #2C2C2C!important;
+}
+html.pnight .intro-container {
+    background-color: #E5E5E5!important;
+}
+html.pnight .btn.btn-md, 
+html.pnight .btn.btn-primary, 
+html.pnight .btn.btn-secondary {
+    background-color: var(--gradient-dark)!important;
+    color: var(--white-color)!important;
+}
+html.pnight .btn.btn-md:hover, 
+html.pnight .btn.btn-primary:hover, 
+html.pnight .btn.btn-secondary:hover {
+    color: var(--white-color)!important;
+    background-color: #2C2C2C!important;
+}
+html.pnight button.project-select-btn,
+html.pnight .card.card--popover.project-select-btn__popper {
+    background-color: #46275f!important;
+    color: var(--white-color)!important;
+}
+html.pnight .create-project #project-list .project_list_item {
+    border-left: 12px solid var(--primary-button)!important;
+}
+html.pnight .create-project #project-list .row.row-hover:hover {
+    background-color: #3c3c3c!important;
+}
+html.pnight .nav-drawer[data-v-73c613f1] {
+    box-shadow: none!important;
+}
+html.pnight ::-webkit-scrollbar-track,
+html.pnight .modal-content,
+html.pnight .confirm-modal-main,
+html.pnight .wfnodestep,
+html.pnight .crconfirm-modal-main {
+    background-color: #2c2c2c!important;
+}
+html.pnight ::-webkit-scrollbar-thumb{
+    background-color: #777986 !important;
+}
+html.pnight ::-webkit-scrollbar-thumb:hover{
+    background-color: #8b8d96 !important;
+}
+html.pnight .select-ser-btn select,
+html.pnight .select-ser-btn select:focus {
+    border: 1px solid #464646!important;
+    color: #D7DAE1 !important;
+    background-color: #46275f!important;
+}
+html.pnight .dropdown-menu>li>a:hover,
+html.pnight .dropdown-menu>li>a:focus,
+html.pnight .dropdown-menu .divider {
+    background-color: #66398a!important;
+}
+html.pnight .widget-wrapper .widget-section:last-child {
+    border-top: 1px solid #66398a!important;
+}
+html.pnight .scroller__item[data-v-55533143]:focus:before, 
+html.pnight .scroller__item[data-v-55533143]:hover:before {
+    border-left: 3px solid var(--gradient-dark)!important;
+}
+html.pnight table.assetstable i.fas,
+html.pnight .nodetags .label.label-muted,
+html.pnight .alert-info,
+html.pnight .intro-content,
+html.pnight .form-control,
+html.pnight .filterContainer .fa.fa-solid.fa-times.close-btn {
+    color: #000!important;
+}
+html.pnight div[data-v-d6318492] button.btn,
+html.pnight div[data-v-d6318492] button.btn.focus, 
+html.pnight div[data-v-d6318492] button.btn:focus, 
+html.pnight div[data-v-d6318492] button.btn:hover {
+    color: #000;
+}
+html.pnight .form-control,
+html.pnight .form-control:focus,
+html.pnight .ace_scroller,
+html.pnight .ace_layer.ace_gutter-layer,
+html.pnight .ace_gutter-cell.ace_gutter-active-line,
+html.pnight .control-fileupload[data-v-05f29618],
+html.pnight .input-group-addon,
+html.pnight .vsb-main button,
+html.pnight select.servSelect, 
+html.pnight select.deleteIpsProj,
+html.pnight textarea {
+    background-color: #3A3B3B!important;
+    border: 1px solid #464646!important;
+    color: #D7DAE1!important;
+}
+html.pnight .vsb-main ul,
+html.pnight .delete-vsb-menu li,
+html.pnight .vsb-menu, 
+html.pnight .delete-vsb-menu, 
+html.pnight .hostnames-vsb-menu,
+html.pnight .vsb-menu .multi li,
+html.pnight .hostnames-vsb-menu li {
+    background-color: #3A3B3B!important;
+}
+html.pnight .caret {
+    border-color: #D7DAE1!important;
+}
+html.pnight .servicename-nav,
+html.pnight .service-main,
+html.pnight .servName,
+html.pnight .filterMain tr.header-main td{
+    color: #B3B5BD!important;
+} 
+html.pnight hr,
+html.pnight #addService .checkBlock,
+html.pnight #addIps .checkBlock,
+html.pnight #deleteService .checkBlock,
+html.pnight .subtitle-head-item.input-group.multiple-control-input-group .input-group-addon.input-group-addon-title,
+html.pnight div.pflowlist ol li {
+    border-color: #464646!important;
+}  
+html.pnight div.child span {
+    background-color: #414141!important;
+}
+html.pnight .navbar__item--active,
+html.pnight .list-group-item,
+html.pnight .btn.autohilite:hover, 
+html.pnight span.autohilite:hover {
+    background-color: #1F1F1F!important;
+}
+html.pnight #loginpage .layout-wizard .card-content .form-control,
+html.pnight .list-group-item,
+html.pnight #page_job_edit div.ace_text {
+    border: 1px solid #464646!important;
+}
+html.pnight .nav-tabs>li#tab_link_result>a:hover span.text-info, 
+html.pnight li#tab_link_result.active span.text-info
+html.pnight .navbar__item--active a, 
+html.pnight .navbar__item--active a div, 
+html.pnight .navbar__item--active a i.fas, 
+html.pnight .navbar__item-container--active a, 
+html.pnight .navbar__item-container--active a div, 
+html.pnight .navbar__item-container--active a i.fas,
+html.pnight a,
+html.pnight .text-info, 
+html.pnight .text-info:focus,
+html.pnight .text-info:hover, 
+html.pnight a.text-info,
+html.pnight li#tab_link_result.active span.text-info,
+html.pnight .label.label-muted,
+html.pnight .subtitle-head-item.input-group.multiple-control-input-group .form-control,
+html.pnight .activity-list .section-space-bottom span a.link-quiet:hover,
+html.pnight .execution-state-summary .execution-retry, 
+html.pnight .execution-state-summary .execution-user,
+html.pnight .close:focus, 
+html.pnight .close:hover,
+html.pnight body#loginpage .full-page.login-page .content .container .row .col-sm-12 .layout-wizard p.text-center,
+html.pnight .cr-tooltip .fa-copy:before,
+html.pnight #section-content .rows,
+html.pnight .deployCheckHead, 
+html.pnight .deployStatusHead, 
+html.pnight .startCheckHead, 
+html.pnight .stopCheckHead, 
+html.pnight .fireDataCheckHead, 
+html.pnight .fireDataStatusHead, 
+html.pnight .startActionStatusHead, 
+html.pnight .stopActionStatusHead, 
+html.pnight .f5enableCheckHead, 
+html.pnight .f5disableCheckHead, 
+html.pnight .f5enableStatusHead, 
+html.pnight .f5disableStatusHead,
+html.pnight .iLMain textarea,
+html.pnight #generateCr .fa-eye-slash:before,
+html.pnight .deletemulti li label,
+html.pnight .multiHosts li label,
+html.pnight .multi li label,
+html.pnight .startCheck, 
+html.pnight .stopCheck, 
+html.pnight .actionStatusHead, 
+html.pnight .f5enable, 
+html.pnight .f5disable,
+html.pnight .deploy,
+html.pnight .rundeck-version-icon span.rundeck-version-name,
+html.pnight .rundeck-version-icon .glyphicon-headphones:before,
+html.pnight .idsTextBox {
+    color: #D7DAE1!important;
+}
+html.pnight #section-utility {
+    border-bottom: 1px solid #46275f;
+    box-shadow: none!important;
+}
+html.pnight .utility-bar[data-v-33a3f905],
+html.pnight #page_storage .table-hover>tbody>tr:hover,
+html.pnight .table-hover>tbody>tr:hover {
+    background-color: #1F1F1F!important;
+}
+html.pnight .utility-bar__item:hover {
+    background-color: transparent!important;
+    color: #D7DAE1!important;
+}
+html.pnight div.select-ser-btn {
+    background-color: #464646!important;
+}
+html.pnight .filterMain table tr:first-child td:last-child {
+    background-color: transparent!important;
+}
+html.pnight .serviceNameblock {
+    background-color: #353535!important;
+} 
+html.pnight .servName {
+    background-color: #1a1a1a!important;
+    color: #D7DAE1!important;
+}
+html.pnight .instanceHeadMainblock,
+html.pnight #wh-details[data-v-dd08980e], 
+html.pnight #wh-title[data-v-dd08980e],
+html.pnight #wh-list[data-v-dd08980e],
+html.pnight .popover {
+    background-color: #2c2c2c!important;
+    border-color:#464646!important;
+}
+html.pnight .multiHosts .searchmultiLabelHost {
+    background-color: #2c2c2c!important;
+    border-color:#464646!important;
+    color: #D7DAE1!important;
+}
+html.pnight .panel {
+    background-color: #2c2c2c!important;
+    border: 1px solid #464646!important; 
+}
+html.pnight .nav-tabs>li.active>a {
+    background-color: #2c2c2c!important;
+    color: #D7DAE1!important;
+    border-color: transparent!important;
+}
+html.pnight .vue-tabs .nav-tabs>li.active>a,
+html.pnight .vue-tabs .nav-tabs>li.active>a:hover,
+html.pnight .vue-tabs .nav-tabs>li>a:hover {
+    color: #D7DAE1!important;
+    background-color: #2c2c2c!important;
+}
+html.pnight .nav-tabs {
+    border-bottom: none!important;
+}
+html.pnight .vue-tabs .nav-tabs-navigation:before,
+html.pnight .subtitle-head-item.execution-aux-info.flex-item-1 {
+    background-color: #474646!important;
+}
+html.pnight .rd-copybox[data-v-bfe70aba],
+html.pnight .optEditForm, 
+html.pnight .wfitemEditForm,
+html.pnight table.assetstable tr th,
+html.pnight table.crInfoBlock tr:first-child td:first-child,
+html.pnight table.crInfoBlock tr:first-child td:last-child,
+html.pnight #page_storage .table>tbody+tbody,
+html.pnight table#nodesTable tr table.table.table-condensed.table-embed.node-details-simple tr>td,
+html.pnight .alc-pol-border {
+    border-top: 1px solid #464646!important;
+}
+html.pnight table.assetstable tr th, 
+html.pnight table.assetstable tr td,
+html.pnight table.crInfoBlock tr th, 
+html.pnight table.crInfoBlock tr td {
+    border-right: 1px solid #464646!important;
+    border-bottom: 1px solid #464646!important;
+}
+html.pnight table.assetstable tr th:first-child,
+html.pnight table.assetstable tr td:first-child,
+html.pnight table.crInfoBlock tr td:first-child {
+    border-left: 1px solid #464646!important;
+}
+
+html.pnight table.crInfoBlock tr:first-child td:last-child,
+html.pnight .rd-drawer[data-v-7ed849a0] {
+    background-color: #1f1f1f!important;
+}
+html.pnight .confirm-title,
+html.pnight .popover-title { 
+    border-bottom: 1px solid #464646!important;
+}
+html.pnight .confirm-btn-block,
+html.pnight section+section.section-separator,
+html.pnight .nodedetail .table tbody tr>td {
+    border-top: 1px solid #464646!important;
+}
+
+html.pnight .cr-tooltip .tooltiptext{
+    background-color: #D7DAE1!important;
+    color: #000!important;
+}
+html.pnight .cr-tooltip .tooltiptext::after {
+    border-color: #D7DAE1 transparent transparent transparent!important;
+}
+html.pnight .subtitle-head-item.input-group.multiple-control-input-group .input-group-addon.input-group-addon-title,
+html.pnight .subtitle-head-item.input-group.multiple-control-input-group .form-control,
+html.pnight .subtitle-head-item.input-group.multiple-control-input-group .input-group-btn {
+    border-bottom: 1px solid #464646!important;
+    border-top: 1px solid #464646!important;
+    border-left: 1px solid #464646!important;
+}
+html.pnight .subtitle-head-item.input-group.multiple-control-input-group .input-btn-toggle .btn.dropdown-toggle.btn-default {
+    background: #363636!important;
+    color: #D7DAE1!important;
+}
+html.pnight .popover.popover-wide.fade.bottom.in {
+	background-color: #363636!important;
+    box-shadow: none!important;
+    border: 1px solid #464646!important;
+}
+html.pnight #nodes_tags .summary.nodetags a {
+    background-color: #1f1f1f!important;
+    color: #D7DAE1!important;
+}
+html.pnight .card, 
+html.pnight .layout-wizard,
+html.pnight .wfnodestep,
+html.pnight .optEditForm,
+html.pnight .gencr-border,
+html.pnight body.crsetup .container.envContainer {
+    border: 1px solid #464646!important; 
+}
+html.pnight .btn-default, 
+html.pnight .btn-success,
+html.pnight .card.card-plain a.btn,
+html.pnight .panel-default>.panel-heading,
+html.pnight .panel-heading {
+    background-color: #1f1f1f!important;
+    color: #D7DAE1!important;
+}
+html.pnight .panel-default>.panel-heading,
+html.pnight .panel-default,
+html.pnight .panel-footer {
+    border: 1px solid #464646!important; 
+}
+html.pnight .pagination>.disabled>a,
+html.pnight .job_list_group_header:hover,
+html.pnight .subtitlebar.job-page,
+html.pnight .rd-copybox[data-v-bfe70aba],
+html.pnight .subtitlebar.execution-page .execution-head-info,
+html.pnight .subtitle-head-item.execution-aux-info.flex-item-1,
+html.pnight .subtitlebar.execution-page,
+html.pnight .popover .popover-title,
+html.pnight .table-striped tbody>tr:nth-of-type(odd),
+html.pnight .panel-footer {
+    background-color: #1a1a1a!important;
+}
+html.pnight .subtitle-head-item.execution-aux-info.flex-item-1 {
+    border-right: 1px solid #2c2c2c!important;
+}
+html.pnight .table tbody tr>td, 
+html.pnight .table tbody tr>th, 
+html.pnight .table tfoot tr>td, 
+html.pnight .table tfoot tr>th, 
+html.pnight .table thead tr>td, 
+html.pnight .table thead tr>th {
+    border-top: 1px solid #464646!important;
+}
+html.pnight .btn-group .btn+.btn, 
+html.pnight .btn-group .btn+.btn-group, 
+html.pnight .btn-group .btn-group+.btn, 
+html.pnight .btn-group .btn-group+.btn-group {
+    border-left-color: #46275f!important;
+}
+html.pnight .popover.top>.arrow:after {
+    border-top-color: #464646!important;
+}
+html.pnight .popover.bottom>.arrow:after {
+    border-bottom-color: #464646!important;
+}
+html.pnight #loginpage .card, 
+html.pnight #loginpage .layout-wizard {
+    border: none !important;
+}
+html.pnight .checkbox label:before {
+    background-color: #565656!important;
+}
+html.pnight body#loginpage .full-page.login-page .content .container .row .col-sm-12 .card,
+html.pnight body#loginpage .card {
+    background-color: #FFFBFB!important;
+}
+html.pnight body#loginpage .full-page.login-page .content .container .row .col-sm-12 .card p.text-center {
+    color: #46275f!important;
+}
+html.pnight #loginpage .card .card-content .form-control {
+    background-color: #FFFBFB!important;
+    color: #464646!important;
+    border:1px solid #A0A0A0!important;
+}
+html.pnight #activity_section {
+    background: #565656!important;
+}
+html.pnight #activity_section .nav-tabs>li.active>a, 
+html.pnight #activity_section .vue-tabs .nav-tabs>li.active>a, 
+html.pnight #activity_section .vue-tabs .nav-tabs>li.active>a:hover, 
+html.pnight #activity_section .vue-tabs .nav-tabs>li>a:hover {
+    background-color: #565656!important;
+}
+html.pnight .card.card-plain + #activity_section {
+    background: transparent!important;
+}
+html.pnight .rdtabs__tabheader--standard .rdtabs__tab--active {
+    color: #D7DAE1!important;
+    background: #2c2c2c!important;
+}
+html.pnight .card.card-plain[data-ko-bind] {
+    border: none !important;
+} 
+html.pnight .loading[data-v-459768f2] {
+    background-color: #000!important;
+}
+html.pnight .searchCrmain input.searchCr {
+    background: #3A3B3B;
+    color: #D7DAE1!important;
+    border: 1px solid #595555!important;
+}
+html.pnight .btn-link {
+    color: #d298ff!important;
+    text-decoration: underline;
+}
+html.pnight .btn-link:hover {
+    color: #fff;
+}
+html.pnight .skeleton[data-v-55533143] {
+    --skel-color: #3a3b3b!important;
+}
+html.pnight .instanceMainblock,
+html.pnight .instanceMainblock, 
+html.pnight .crinstanceMainblock {
+    background: #414141!important;
+}
+html.pnight .instanceMainblock:hover,
+html.pnight .instanceMainblock:hover, 
+html.pnight .crinstanceMainblock:hover {
+    background: #343333!important;
+}
+html.pnight .ser-instance .insta_Main {
+    background: #353535!important;
+}
+/********************classic black theme assets **********************/
+   
+html.black body#loginpage .oto-logo,
+html.black .intro-container .intro-logo,
+html.black .intro-container .intro-logo {
+    background-image: url("../images/logos/oto-logo-black.svg");
+}
+html.black .rdicon.app-logo {
+    background-image: url("../images/logos/rundecklogo-black.svg");
+}
+html.black .intro-image.one {
+    background-image: url("../images/logos/oto-guide-1-black.svg");
+}
+html.black .intro-image.two {
+    background-image: url("../images/logos/oto-guide-2-black.svg");
+}
+html.black .intro-image.three {
+    background-image: url("../images/logos/oto-guide-3-black.svg");
+}
+html.black #loginpage .oto-intro {
+    background-image: url("../images/logos/oto-login-image-black.svg");
+}
+html.black .card,
+html.black .layout-wizard,
+html.black #section-content,
+html.black .panel-body {
+    background-color: #2C2C2C!important;
+}
+html.black .intro-container {
+    background-color: #E5E5E5!important;
+}
+html.black .btn.btn-md, 
+html.black .btn.btn-primary, 
+html.black .btn.btn-secondary {
+    background-color: #414244!important;
+    color: var(--white-color)!important;
+    border: 1px solid #636568!important;
+}
+html.black .btn.btn-md:hover, 
+html.black .btn.btn-primary:hover, 
+html.black .btn.btn-secondary:hover {
+    color: var(--white-color)!important;
+    background-color: #1f1f1f!important;
+}
+html.black button.project-select-btn,
+html.black .card.card--popover.project-select-btn__popper {
+    background-color: #4f4f4f!important;
+    color: var(--white-color)!important;
+    border: 1px solid #636568!important;
+}
+
+html.black .pegutils-block {
+    background-color: #3C3E4D!important;
+}
+html.black .create-project #project-list .project_list_item {
+    border-left: 12px solid #101010!important;
+}
+html.black .create-project #project-list .row.row-hover:hover {
+    background-color: #3c3c3c!important;
+}
+html.black .nav-drawer[data-v-73c613f1] {
+    box-shadow: none!important;
+}
+html.black .modal-content,
+html.black .confirm-modal-main,
+html.black .wfnodestep,
+html.black .crconfirm-modal-main {
+    background-color: #565656!important;
+}
+html.black ::-webkit-scrollbar-thumb{
+    background-color: #777986 !important;
+}
+html.black ::-webkit-scrollbar-thumb:hover{
+    background-color: #8b8d96 !important;
+}
+html.black .select-ser-btn select,
+html.black .select-ser-btn select:focus {
+    border: 1px solid #464646!important;
+    color: #D7DAE1 !important;
+    background-color: #1f1f1f!important;
+}
+html.black .dropdown-menu>li>a:hover,
+html.black .dropdown-menu>li>a:focus,
+html.black .dropdown-menu .divider {
+    background-color: #5a5a5a!important;
+}
+html.black .widget-wrapper .widget-section:last-child {
+    border-top: 1px solid #444!important;
+}
+html.black .scroller__item[data-v-55533143]:focus:before, 
+html.black .scroller__item[data-v-55533143]:hover:before {
+    border-left: 3px solid var(--gradient-dark)!important;
+}
+html.black table.assetstable i.fas,
+html.black .nodetags .label.label-muted,
+html.black .alert-info,
+html.black .intro-content,
+html.black .form-control,
+html.black .filterContainer .fa.fa-solid.fa-times.close-btn {
+    color: #000!important;
+}
+html.black div[data-v-d6318492] button.btn,
+html.black div[data-v-d6318492] button.btn.focus, 
+html.black div[data-v-d6318492] button.btn:focus, 
+html.black div[data-v-d6318492] button.btn:hover {
+    color: #000;
+}
+html.black .form-control,
+html.black .form-control:focus,
+html.black .ace_scroller,
+html.black .ace_layer.ace_gutter-layer,
+html.black .ace_gutter-cell.ace_gutter-active-line,
+html.black .control-fileupload[data-v-05f29618],
+html.black .input-group-addon,
+html.black .vsb-main button,
+html.black select.servSelect, 
+html.black select.deleteIpsProj,
+html.black textarea {
+    background-color: #454141!important;
+    border: 1px solid #464646!important;
+    color: #D7DAE1!important;
+}
+html.black .vsb-main ul,
+html.black .delete-vsb-menu li,
+html.black .vsb-menu, 
+html.black .delete-vsb-menu, 
+html.black .hostnames-vsb-menu,
+html.black .vsb-menu .multi li,
+html.black .hostnames-vsb-menu li {
+    background-color: #3c3e4d!important;
+}
+html.black .caret {
+    border-color: #D7DAE1!important;
+}
+html.black .servicename-nav,
+html.black .service-main,
+html.black .servName,
+html.black .filterMain tr.header-main td{
+    color: #B3B5BD!important;
+} 
+html.black hr,
+html.black #addService .checkBlock,
+html.black #addIps .checkBlock,
+html.black #deleteService .checkBlock,
+html.black .subtitle-head-item.input-group.multiple-control-input-group .input-group-addon.input-group-addon-title,
+html.black div.pflowlist ol li {
+    border-color: #464646!important;
+}  
+html.black div.child span {
+    background-color: #3F3F3F!important;
+}
+html.black .navbar__item--active,
+html.black .list-group-item,
+html.black .btn.autohilite:hover, 
+html.black span.autohilite:hover,
+html.black .rd-drawer[data-v-7ed849a0] {
+    background-color: #1F1F1F!important;
+}
+html.black #loginpage .layout-wizard .card-content .form-control,
+html.black .list-group-item,
+html.black #page_job_edit div.ace_text {
+    border: 1px solid #464646!important;
+}
+html.black .nav-tabs>li#tab_link_result>a:hover span.text-info, 
+html.black li#tab_link_result.active span.text-info
+html.black .navbar__item--active a, 
+html.black .navbar__item--active a div, 
+html.black .navbar__item--active a i.fas, 
+html.black .navbar__item-container--active a, 
+html.black .navbar__item-container--active a div, 
+html.black .navbar__item-container--active a i.fas,
+html.black a,
+html.black .text-info, 
+html.black .text-info:focus,
+html.black .text-info:hover, 
+html.black a.text-info,
+html.black li#tab_link_result.active span.text-info,
+html.black .label.label-muted,
+html.black .subtitle-head-item.input-group.multiple-control-input-group .form-control,
+html.black .activity-list .section-space-bottom span a.link-quiet:hover,
+html.black .execution-state-summary .execution-retry, 
+html.black .execution-state-summary .execution-user,
+html.black .close:focus, 
+html.black .close:hover,
+html.black body#loginpage .full-page.login-page .content .container .row .col-sm-12 .layout-wizard p.text-center,
+html.black .cr-tooltip .fa-copy:before,
+html.black #section-content .rows,
+html.black .deployCheckHead, 
+html.black .deployStatusHead, 
+html.black .startCheckHead, 
+html.black .stopCheckHead, 
+html.black .fireDataCheckHead, 
+html.black .fireDataStatusHead, 
+html.black .startActionStatusHead, 
+html.black .stopActionStatusHead, 
+html.black .f5enableCheckHead, 
+html.black .f5disableCheckHead, 
+html.black .f5enableStatusHead, 
+html.black .f5disableStatusHead,
+html.black .iLMain textarea,
+html.black #generateCr .fa-eye-slash:before,
+html.black .deletemulti li label,
+html.black .multiHosts li label,
+html.black .multi li label,
+html.black .startCheck, 
+html.black .stopCheck, 
+html.black .actionStatusHead, 
+html.black .f5enable, 
+html.black .f5disable,
+html.black .deploy,
+html.black .rundeck-version-icon span.rundeck-version-name,
+html.black .rundeck-version-icon .glyphicon-headphones:before,
+html.black .idsTextBox {
+    color: #D7DAE1!important;
+}
+html.black #section-utility {
+    border-bottom: 1px solid #1f1f1f;
+    box-shadow: none!important;
+}
+html.black .utility-bar[data-v-33a3f905],
+html.black #page_storage .table-hover>tbody>tr:hover,
+html.black .table-hover>tbody>tr:hover {
+    background-color: #1F1F1F!important;
+}
+html.black .utility-bar__item:hover {
+    background-color: transparent!important;
+    color: #D7DAE1!important;
+}
+html.black div.select-ser-btn {
+    background-color: #464646!important;
+}
+html.black .filterMain table tr:first-child td:last-child {
+    background-color: transparent!important;
+}
+html.black .serviceNameblock {
+    background-color: #353535!important;
+} 
+html.black .servName {
+    background-color: #1a1a1a!important;
+    color: #D7DAE1!important;
+}
+html.black .instanceHeadMainblock,
+html.black #wh-details[data-v-dd08980e], 
+html.black #wh-title[data-v-dd08980e],
+html.black #wh-list[data-v-dd08980e],
+html.black .popover {
+    background-color: #2c2c2c!important;
+    border-color:#444!important;
+}
+html.black .multiHosts .searchmultiLabelHost {
+    background-color: #2c2c2c!important;
+    border-color:#464646!important;
+    color: #D7DAE1!important;
+}
+html.black .panel {
+    background-color: #2c2c2c!important;
+    border: 1px solid #464646!important; 
+}
+html.black .nav-tabs>li.active>a {
+    background-color: #2c2c2c!important;
+    color: #D7DAE1!important;
+    border-color: transparent!important;
+}
+html.black .vue-tabs .nav-tabs>li.active>a,
+html.black .vue-tabs .nav-tabs>li.active>a:hover,
+html.black .vue-tabs .nav-tabs>li>a:hover {
+    color: #D7DAE1!important;
+    background-color: #2c2c2c!important;
+}
+html.black .nav-tabs {
+    border-bottom: none!important;
+}
+html.black .vue-tabs .nav-tabs-navigation:before,
+html.black .subtitle-head-item.execution-aux-info.flex-item-1 {
+    background-color: #161212!important;
+}
+html.black .rd-copybox[data-v-bfe70aba],
+html.black .optEditForm, 
+html.black .wfitemEditForm,
+html.black table.assetstable tr th,
+html.black table.crInfoBlock tr:first-child td:first-child,
+html.black table.crInfoBlock tr:first-child td:last-child,
+html.black #page_storage .table>tbody+tbody,
+html.black table#nodesTable tr table.table.table-condensed.table-embed.node-details-simple tr>td,
+html.black .alc-pol-border {
+    border-top: 1px solid #464646!important;
+}
+html.black table.assetstable tr th, 
+html.black table.assetstable tr td,
+html.black table.crInfoBlock tr th, 
+html.black table.crInfoBlock tr td {
+    border-right: 1px solid #464646!important;
+    border-bottom: 1px solid #464646!important;
+}
+html.black table.assetstable tr th:first-child,
+html.black table.assetstable tr td:first-child,
+html.black table.crInfoBlock tr td:first-child {
+    border-left: 1px solid #464646!important;
+}
+
+html.black table.crInfoBlock tr:first-child td:last-child {
+    background-color: #1f1f1f!important;
+}
+html.black .confirm-title,
+html.black .popover-title { 
+    border-bottom: 1px solid #464646!important;
+}
+html.black .confirm-btn-block,
+html.black section+section.section-separator,
+html.black .nodedetail .table tbody tr>td {
+    border-top: 1px solid #464646!important;
+}
+
+html.black .cr-tooltip .tooltiptext{
+    background-color: #D7DAE1!important;
+    color: #000!important;
+}
+html.black .cr-tooltip .tooltiptext::after {
+    border-color: #D7DAE1 transparent transparent transparent!important;
+}
+html.black .subtitle-head-item.input-group.multiple-control-input-group .input-group-addon.input-group-addon-title,
+html.black .subtitle-head-item.input-group.multiple-control-input-group .form-control,
+html.black .subtitle-head-item.input-group.multiple-control-input-group .input-group-btn {
+    border-bottom: 1px solid #464646!important;
+    border-top: 1px solid #464646!important;
+    border-left: 1px solid #464646!important;
+}
+html.black .subtitle-head-item.input-group.multiple-control-input-group .input-btn-toggle .btn.dropdown-toggle.btn-default {
+    background: #363636!important;
+    color: #D7DAE1!important;
+}
+html.black .popover.popover-wide.fade.bottom.in {
+	background-color: #363636!important;
+    box-shadow: none!important;
+    border: 1px solid #464646!important;
+}
+html.black #nodes_tags .summary.nodetags a {
+    background-color: #1f1f1f!important;
+    color: #D7DAE1!important;
+}
+html.black .card, 
+html.black .layout-wizard,
+html.black .wfnodestep,
+html.black .optEditForm,
+html.black .gencr-border,
+html.black body.crsetup .container.envContainer {
+    border: 1px solid #444!important; 
+}
+html.black .btn-default, 
+html.black .btn-success,
+html.black .card.card-plain a.btn,
+html.black .panel-default>.panel-heading,
+html.black .panel-heading {
+    background-color: #1f1f1f!important;
+    color: #D7DAE1!important;
+}
+html.black .panel-default>.panel-heading,
+html.black .panel-default,
+html.black .panel-footer {
+    border: 1px solid #464646!important; 
+}
+html.black .pagination>.disabled>a,
+html.black .job_list_group_header:hover,
+html.black .subtitlebar.job-page,
+html.black .rd-copybox[data-v-bfe70aba],
+html.black .subtitlebar.execution-page .execution-head-info,
+html.black .subtitle-head-item.execution-aux-info.flex-item-1,
+html.black .subtitlebar.execution-page,
+html.black .popover .popover-title,
+html.black .table-striped tbody>tr:nth-of-type(odd),
+html.black .panel-footer {
+    background-color: #565656!important;
+}
+html.black .subtitle-head-item.execution-aux-info.flex-item-1 {
+    border-right: 1px solid #464646!important;
+}
+html.black .table tbody tr>td, 
+html.black .table tbody tr>th, 
+html.black .table tfoot tr>td, 
+html.black .table tfoot tr>th, 
+html.black .table thead tr>td, 
+html.black .table thead tr>th {
+    border-top: 1px solid #464646!important;
+}
+html.black .btn-group .btn+.btn, 
+html.black .btn-group .btn+.btn-group, 
+html.black .btn-group .btn-group+.btn, 
+html.black .btn-group .btn-group+.btn-group {
+    border-left-color: #444!important;
+}
+html.black .popover.top>.arrow:after {
+    border-top-color: #464646!important;
+}
+html.black .popover.bottom>.arrow:after {
+    border-bottom-color: #464646!important;
+}
+html.black #loginpage .card, 
+html.black #loginpage .layout-wizard {
+    border: none !important;
+}
+html.black .checkbox label:before {
+    background-color: #565656!important;
+}
+html.black body#loginpage .full-page.login-page .content .container .row .col-sm-12 .card,
+html.black body#loginpage .card {
+    background-color: #FFFBFB!important;
+}
+html.black body#loginpage .full-page.login-page .content .container .row .col-sm-12 .card p.text-center {
+    color: #1f1f1f!important;
+}
+html.black #loginpage .card .card-content .form-control {
+    background-color: #FFFBFB!important;
+    color: #464646!important;
+    border:1px solid #A0A0A0!important;
+}
+html.black .nav-drawer[data-v-73c613f1]{
+    border-color: #363636!important;
+}
+html.black #activity_section {
+    background: #4f4f4f!important;
+}
+html.black #activity_section .vue-tabs .nav-tabs-navigation,
+html.black #activity_section .vue-tabs .nav-tabs-navigation:before {
+    background-color: #878787!important;
+}
+html.black #activity_section .nav-tabs>li.active>a, 
+html.black #activity_section .vue-tabs .nav-tabs>li.active>a, 
+html.black #activity_section .vue-tabs .nav-tabs>li.active>a:hover, 
+html.black #activity_section .vue-tabs .nav-tabs>li>a:hover {
+    background-color: #4f4f4f!important;
+}
+html.black .card.card-plain + #activity_section {
+    background: transparent!important;
+}
+html.black .rdtabs__tabheader--standard .rdtabs__tab--active {
+    color: #D7DAE1!important;
+    background: #2c2c2c!important;
+}
+html.black .card.card-plain[data-ko-bind] {
+    border: none !important;
+} 
+html.black .loading[data-v-459768f2] {
+    background-color: #000!important;
+}
+html.black .searchCrmain input.searchCr {
+    background: #3A3B3B;
+    color: #D7DAE1!important;
+    border: 1px solid #595555!important;
+}
+html.black .btn-link {
+    color: #D7DAE1!important;
+    text-decoration: underline!important;
+}
+html.black .btn-link:hover {
+    color: #fff;
+}
+html.black .skeleton[data-v-55533143] {
+    --skel-color: #454141!important;
+}
+html.black .instanceMainblock,
+html.black .instanceMainblock, 
+html.black .crinstanceMainblock {
+    background: #3f3f3f!important;
+}
+html.black .instanceMainblock:hover,
+html.black .instanceMainblock:hover, 
+html.black .crinstanceMainblock:hover {
+    background: #343333!important;
+}
+html.black ::-webkit-scrollbar-track {
+    background: #2c2c2c!important; 
+}
+/******************** violet matt theme assets **********************/
+   
+html.violet body#loginpage .oto-logo,
+html.violet .intro-container .intro-logo,
+html.violet .intro-container .intro-logo {
+    background-image: url("../images/logos/oto-logo-violet.svg");
+}
+html.violet .rdicon.app-logo {
+    background-image: url("../images/logos/rundecklogo-violet.svg");
+}
+html.violet .intro-image.one {
+    background-image: url("../images/logos/oto-guide-1-violet.svg");
+}
+html.violet .intro-image.two {
+    background-image: url("../images/logos/oto-guide-2-violet.svg");
+}
+html.violet .intro-image.three {
+    background-image: url("../images/logos/oto-guide-3-violet.svg");
+}
+html.violet #loginpage .oto-intro {
+    background-image: url("../images/logos/oto-login-image-violet.svg");
+}
+html.violet .card,
+html.violet .layout-wizard,
+html.violet #section-content,
+html.violet .panel-body,
+html.violet .list-group-item{
+    background-color: #1F212C!important;
+}
+html.violet .intro-container {
+    background-color: #E5E5E5!important;
+}
+html.violet .btn.btn-md, 
+html.violet .btn.btn-primary, 
+html.violet .btn.btn-secondary {
+    background-color: #3C3E4D!important;
+    color: var(--white-color)!important;
+    border: 1px solid #75799A!important;
+}
+html.violet .btn.btn-md:hover, 
+html.violet .btn.btn-primary:hover, 
+html.violet .btn.btn-secondary:hover {
+    color: var(--white-color)!important;
+    background-color: #282A3A!important;
+}
+html.violet button.project-select-btn,
+html.violet .card.card--popover.project-select-btn__popper {
+    background-color: #3C3E4D!important;
+    color: #D7DAE1 !important;
+    border: 1px solid #75799A!important;
+}
+html.violet .pegutils-block {
+    background-color: #3C3E4D!important;
+}
+html.violet .create-project #project-list .project_list_item {
+    background-color: #313342!important;
+}
+html.violet .create-project #project-list .project_list_item {
+    border-left: 12px solid #404252!important;
+}
+html.violet .create-project #project-list .row.row-hover:hover {
+    background-color: #4d5062!important;
+}
+html.violet .nav-drawer[data-v-73c613f1] {
+    box-shadow: none!important;
+}
+html.violet .modal-content,
+html.violet .confirm-modal-main,
+html.violet .wfnodestep,
+html.violet .crconfirm-modal-main {
+    background-color: #595E7C!important;
+}
+html.violet ::-webkit-scrollbar-thumb{
+    background-color: #777986 !important;
+}
+html.violet ::-webkit-scrollbar-thumb:hover{
+    background-color: #8b8d96 !important;
+}
+html.violet .select-ser-btn select,
+html.violet .select-ser-btn select:focus {
+    background-color: #363956!important;
+    color: #D7DAE1 !important;
+    border: none!important;
+}
+html.violet .dropdown-menu>li>a:hover,
+html.violet .dropdown-menu>li>a:focus,
+html.violet .dropdown-menu .divider {
+    background-color: #363956!important;
+}
+html.violet .widget-wrapper .widget-section:last-child {
+    border-top: 1px solid #444!important;
+}
+html.violet .scroller__item[data-v-55533143]:focus:before, 
+html.violet .scroller__item[data-v-55533143]:hover:before {
+    border-left: 3px solid var(--gradient-dark)!important;
+}
+html.violet table.assetstable i.fas,
+html.violet .nodetags .label.label-muted,
+html.violet .alert-info,
+html.violet .intro-content,
+html.violet .form-control,
+html.violet .filterContainer .fa.fa-solid.fa-times.close-btn {
+    color: #13172C!important;
+}
+html.violet div[data-v-d6318492] button.btn,
+html.violet div[data-v-d6318492] button.btn.focus, 
+html.violet div[data-v-d6318492] button.btn:focus, 
+html.violet div[data-v-d6318492] button.btn:hover {
+    color: #13172C;
+}
+html.violet .form-control,
+html.violet .form-control:focus,
+html.violet .ace_scroller,
+html.violet .ace_layer.ace_gutter-layer,
+html.violet .ace_gutter-cell.ace_gutter-active-line,
+html.violet .control-fileupload[data-v-05f29618],
+html.violet .input-group-addon,
+html.violet .vsb-main button,
+html.violet select.servSelect, 
+html.violet select.deleteIpsProj,
+html.violet textarea {
+    background-color: #3c3e4d!important;
+    border: 1px solid #75799a!important;
+    color: #D7DAE1!important;
+}
+html.violet .vsb-main ul,
+html.violet .delete-vsb-menu li,
+html.violet .vsb-menu, 
+html.violet .delete-vsb-menu, 
+html.violet .hostnames-vsb-menu,
+html.violet .vsb-menu .multi li,
+html.violet .hostnames-vsb-menu li {
+    background-color: #3c3e4d!important;
+}
+html.violet .caret {
+    border-color: #D7DAE1!important;
+}
+html.violet .servicename-nav,
+html.violet .service-main,
+html.violet .servName,
+html.violet .filterMain tr.header-main td{
+    color: #B3B5BD!important;
+} 
+html.violet hr,
+html.violet #addService .checkBlock,
+html.violet #addIps .checkBlock,
+html.violet #deleteService .checkBlock,
+html.violet .subtitle-head-item.input-group.multiple-control-input-group .input-group-addon.input-group-addon-title,
+html.violet div.pflowlist ol li {
+    border-color: #36394d!important;
+}  
+html.violet div.child span {
+    background-color: #585c74!important;
+    color: #D7DAE1!important;
+}
+html.violet .navbar__item--active,
+html.violet .btn.autohilite:hover, 
+html.violet span.autohilite:hover {
+    background-color: #B3B5BD!important;
+}
+html.violet .main-section[data-v-3acc10f8] .list-group-item,
+html.violet .node_step_section .list-group-item,
+html.violet .step_section .list-group-item   {
+    background-color: #282a3a!important;
+}
+html.violet #loginpage .layout-wizard .card-content .form-control,
+html.violet .list-group-item,
+html.violet #page_job_edit div.ace_text,
+html.violet .intro-container .dot {
+    border: 1px solid #36394d!important;
+}
+html.violet .nav-tabs>li#tab_link_result>a:hover span.text-info, 
+html.violet li#tab_link_result.active span.text-info
+html.violet .text-info, 
+html.violet .text-info:focus,
+html.violet .text-info:hover, 
+html.violet a.text-info,
+html.violet li#tab_link_result.active span.text-info,
+html.violet .label.label-muted,
+html.violet .subtitle-head-item.input-group.multiple-control-input-group .form-control,
+html.violet .activity-list .section-space-bottom span a.link-quiet:hover,
+html.violet .execution-state-summary .execution-retry, 
+html.violet .execution-state-summary .execution-user,
+html.violet .close:focus, 
+html.violet .close:hover,
+html.violet body#loginpage .full-page.login-page .content .container .row .col-sm-12 .layout-wizard p.text-center,
+html.violet .cr-tooltip .fa-copy:before,
+html.violet #section-content .rows,
+html.violet .deployCheckHead, 
+html.violet .deployStatusHead, 
+html.violet .startCheckHead, 
+html.violet .stopCheckHead, 
+html.violet .fireDataCheckHead, 
+html.violet .fireDataStatusHead, 
+html.violet .startActionStatusHead, 
+html.violet .stopActionStatusHead, 
+html.violet .f5enableCheckHead, 
+html.violet .f5disableCheckHead, 
+html.violet .f5enableStatusHead, 
+html.violet .f5disableStatusHead,
+html.violet .iLMain textarea,
+html.violet #generateCr .fa-eye-slash:before,
+html.violet .deletemulti li label,
+html.violet .multiHosts li label,
+html.violet .multi li label,
+html.violet .startCheck, 
+html.violet .stopCheck, 
+html.violet .actionStatusHead, 
+html.violet .f5enable, 
+html.violet .f5disable,
+html.violet .deploy,
+html.violet .rundeck-version-icon span.rundeck-version-name,
+html.violet .rundeck-version-icon .glyphicon-headphones:before,
+html.violet .idsTextBox {
+    color: #D7DAE1!important;
+}
+html.violet a {
+    color: #D7DAE1!important;
+}
+html.violet #section-utility {
+    border-bottom: 1px solid #1f1f1f;
+    box-shadow: none!important;
+}
+html.violet .utility-bar[data-v-33a3f905],
+html.violet #page_storage .table-hover>tbody>tr:hover,
+html.violet .table-hover>tbody>tr:hover {
+    background-color: #282A3A!important;
+}
+html.violet .utility-bar__item:hover {
+    background-color: transparent!important;
+    color: #D7DAE1!important;
+}
+html.violet div.select-ser-btn {
+    background-color: #36394d!important;
+}
+html.violet .filterMain table tr:first-child td:last-child {
+    background-color: transparent!important;
+}
+html.violet .serviceNameblock {
+    background-color: #404357!important;
+} 
+html.violet .servName {
+    background-color: #13172C!important;
+    color: #D7DAE1!important;
+}
+html.violet .instanceHeadMainblock,
+html.violet #wh-details[data-v-dd08980e], 
+html.violet #wh-title[data-v-dd08980e],
+html.violet #wh-list[data-v-dd08980e],
+html.violet .popover {
+    background-color: #1f212c!important;
+    border-color:#444!important;
+}
+html.violet .multiHosts .searchmultiLabelHost {
+    background-color: #1f212c!important;
+    border-color:#36394d!important;
+    color: #D7DAE1!important;
+}
+html.violet .panel {
+    background-color: #1f212c!important;
+    border: 1px solid #36394d!important; 
+}
+html.violet .nav-tabs>li.active>a {
+    background-color: #1f212c!important;
+    color: #D7DAE1!important;
+    border-color: transparent!important;
+}
+html.violet .vue-tabs .nav-tabs>li.active>a,
+html.violet .vue-tabs .nav-tabs>li.active>a:hover,
+html.violet .vue-tabs .nav-tabs>li>a:hover {
+    color: #D7DAE1!important;
+    background-color: #1f212c!important;
+}
+html.violet .nav-tabs {
+    border-bottom: none!important;
+}
+html.violet .vue-tabs .nav-tabs-navigation:before,
+html.violet .subtitle-head-item.execution-aux-info.flex-item-1,
+html.violet .rd-drawer[data-v-7ed849a0] {
+    background-color: #13172c!important;
+}
+
+html.violet .optEditForm, 
+html.violet .wfitemEditForm,
+html.violet table.assetstable tr th,
+html.violet table.crInfoBlock tr:first-child td:first-child,
+html.violet table.crInfoBlock tr:first-child td:last-child,
+html.violet #page_storage .table>tbody+tbody,
+html.violet table#nodesTable tr table.table.table-condensed.table-embed.node-details-simple tr>td,
+html.violet .alc-pol-border {
+    border-top: 1px solid #36394d!important;
+}
+html.violet .rd-copybox[data-v-bfe70aba] {
+    border-top: 1px solid #a1a1aa!important;
+}
+html.violet table.assetstable tr th, 
+html.violet table.assetstable tr td,
+html.violet table.crInfoBlock tr th, 
+html.violet table.crInfoBlock tr td {
+    border-right: 1px solid #36394d!important;
+    border-bottom: 1px solid #36394d!important;
+}
+html.violet table.assetstable tr th:first-child,
+html.violet table.assetstable tr td:first-child,
+html.violet table.crInfoBlock tr td:first-child {
+    border-left: 1px solid #36394d!important;
+}
+
+html.violet table.crInfoBlock tr:first-child td:last-child {
+    background-color: #393c51!important;
+}
+html.violet .confirm-title,
+html.violet .popover-title { 
+    border-bottom: 1px solid #36394d!important;
+}
+html.violet .confirm-btn-block,
+html.violet section+section.section-separator {
+    border-top: 1px solid #36394d!important;
+}
+html.violet .nodedetail .table tbody tr>td {
+    border-top: 1px solid #454a64!important;
+}
+
+html.violet .cr-tooltip .tooltiptext{
+    background-color: #D7DAE1!important;
+    color: #13172C!important;
+}
+html.violet .cr-tooltip .tooltiptext::after {
+    border-color: #D7DAE1 transparent transparent transparent!important;
+}
+html.violet .subtitle-head-item.input-group.multiple-control-input-group .input-group-addon.input-group-addon-title,
+html.violet .subtitle-head-item.input-group.multiple-control-input-group .form-control,
+html.violet .subtitle-head-item.input-group.multiple-control-input-group .input-group-btn {
+    border-bottom: 1px solid #36394d!important;
+    border-top: 1px solid #36394d!important;
+    border-left: 1px solid #36394d!important;
+}
+html.violet .subtitle-head-item.input-group.multiple-control-input-group .input-btn-toggle .btn.dropdown-toggle.btn-default {
+    background: #41455A!important;
+    color: #D7DAE1!important;
+}
+html.violet .popover.popover-wide.fade.bottom.in {
+	background-color:#595E7C!important;
+    box-shadow: none!important;
+    border: 1px solid #36394d!important;
+}
+html.violet #nodes_tags .summary.nodetags a {
+    background-color: #131521!important;
+    color: #D7DAE1!important;
+}
+html.violet .text-info, 
+html.violet .text-info:focus,
+html.violet .text-info:hover, a.text-info {
+    color: #D7DAE1!important;
+}
+html.violet .card, 
+html.violet .layout-wizard,
+html.violet .wfnodestep,
+html.violet .optEditForm,
+html.violet .gencr-border,
+html.violet body.crsetup .container.envContainer {
+    border: 1px solid #36394d!important; 
+}
+html.violet .btn-default, 
+html.violet .btn-success,
+html.violet .card.card-plain a.btn,
+html.violet .panel-default>.panel-heading,
+html.violet .panel-heading {
+    background-color: #13172C!important;
+    color: #D7DAE1!important;
+}
+html.violet .panel-default>.panel-heading,
+html.violet .panel-default,
+html.violet .panel-footer {
+    border: 1px solid #36394d!important; 
+}
+html.violet .pagination>.disabled>a,
+html.violet .job_list_group_header:hover,
+html.violet .subtitlebar.job-page,
+html.violet .rd-copybox[data-v-bfe70aba],
+html.violet .subtitlebar.execution-page,
+html.violet .popover .popover-title,
+html.violet .table-striped tbody>tr:nth-of-type(odd),
+html.violet .panel-footer {
+    background-color: #393c51!important;
+}
+html.violet .subtitlebar.execution-page .execution-head-info,
+html.violet .subtitle-head-item.execution-aux-info.flex-item-1 {
+    background-color: #474B5E!important;
+}
+html.violet .subtitle-head-item.execution-aux-info.flex-item-1 {
+    border-right: 1px solid #36394d!important;
+}
+html.violet .table tbody tr>td, 
+html.violet .table tbody tr>th, 
+html.violet .table tfoot tr>td, 
+html.violet .table tfoot tr>th, 
+html.violet .table thead tr>td, 
+html.violet .table thead tr>th {
+    border-top: 1px solid #36394d!important;
+}
+html.violet .btn-group .btn+.btn, 
+html.violet .btn-group .btn+.btn-group, 
+html.violet .btn-group .btn-group+.btn, 
+html.violet .btn-group .btn-group+.btn-group {
+    border-left-color: #444!important;
+}
+html.violet .popover.top>.arrow:after {
+    border-top-color: #36394d!important;    
+}
+html.violet .popover.bottom>.arrow:after {
+    border-bottom-color: #36394d!important;
+}
+html.violet #loginpage .card, 
+html.violet #loginpage .layout-wizard {
+    border: none !important;
+}
+html.violet .checkbox label:before {
+    background-color: #565656!important;
+}
+html.violet body#loginpage .full-page.login-page .content .container .row .col-sm-12 .card,
+html.violet body#loginpage .card {
+    background-color: #FFFBFB!important;
+}
+html.violet body#loginpage .full-page.login-page .content .container .row .col-sm-12 .card p.text-center {
+    color: #1f1f1f!important;
+}
+html.violet #loginpage .card .card-content .form-control {
+    background-color: #FFFBFB!important;
+    color: #464646!important;
+    border:1px solid #A0A0A0!important;
+}
+html.violet .nav-drawer[data-v-73c613f1]{
+    border-color: #363636!important;
+}
+html.violet .navbar__item--active a, 
+html.violet .navbar__item--active a div, 
+html.violet .navbar__item--active a i.fas, 
+html.violet .navbar__item-container--active a, 
+html.violet .navbar__item-container--active a div, 
+html.violet .navbar__item-container--active a i.fas {
+    color: #282A3A!important;
+}
+html.violet #activity_section {
+    background: #44475A!important;
+}
+html.violet #activity_section .vue-tabs .nav-tabs-navigation,
+html.violet #activity_section .vue-tabs .nav-tabs-navigation:before {
+    background-color: #6E7282!important;
+}
+html.violet #activity_section .nav-tabs>li.active>a, 
+html.violet #activity_section .vue-tabs .nav-tabs>li.active>a, 
+html.violet #activity_section .vue-tabs .nav-tabs>li.active>a:hover, 
+html.violet #activity_section .vue-tabs .nav-tabs>li>a:hover {
+    background-color: #44475a!important;
+}
+html.violet .card.card-plain + #activity_section {
+    background: transparent!important;
+}
+html.violet .rdtabs__tabheader--standard .rdtabs__tab--active {
+    color: #D7DAE1!important;
+    background: #1f212c!important;
+}
+html.violet .card.card-plain[data-ko-bind] {
+    border: none !important;
+} 
+html.violet button.btn.btn-cta.apply-btn, 
+html.violet button.btn.btn-primary.reset-btn {
+    -webkit-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75)!important;
+    -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75)!important;
+    box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75)!important;
+}
+html.violet .loading[data-v-459768f2] {
+    background-color: #000!important;
+}
+html.violet .searchCrmain input.searchCr {
+    background: #474A5D;
+    color: #D7DAE1!important;
+    border: 1px solid #676a7d!important;
+}
+html.violet .bulk_edit_controls.panel.panel-warning .panel-heading {
+    border-color: #36394d!important;
+}
+html.violet .has-warning .control-label {
+    color: #ffa100!important;   
+}
+html.violet .btn-link {
+    color: #D7DAE1!important;
+    text-decoration: underline;
+}
+html.violet .btn-link:hover {
+    color: #fff;
+}
+html.violet .skeleton[data-v-55533143] {
+    --skel-color: #1f212c!important;
+}
+html.violet .instanceMainblock,
+html.violet .instanceMainblock, 
+html.violet .crinstanceMainblock {
+    background: #404357!important;
+}
+html.violet .instanceMainblock:hover,
+html.violet .instanceMainblock:hover, 
+html.violet .crinstanceMainblock:hover {
+    background: #333547!important;
+}
+html.violet ::-webkit-scrollbar-track {
+    background: #1f212c!important; 
+}

@@ -1,5 +1,5 @@
 <template>
-    <span class="rundeck-version-icon" :style="{color}" >
+    <span class="rundeck-version-icon" >
         <i class="glyphicon" :class="['glyphicon-'+icon]"></i>
         <span class="rundeck-version-name">{{text}}</span>
     </span>

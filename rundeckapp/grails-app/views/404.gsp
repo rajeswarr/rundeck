@@ -22,6 +22,13 @@
     <g:appTitle /> -
     <g:message code="request.error.notfound.title" />
   </title>
+  <style>
+  a.return-button {color:#fff!important;}
+  h4.text-danger,
+  h4.text-danger:hover{
+    color: #f1185c!important;
+  }
+  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="SHORTCUT" href="${g.resource(dir: 'images', file: 'favicon-152.png')}" />
   <link rel="favicon" href="${g.resource(dir: 'images', file: 'favicon-152.png')}" />
@@ -44,8 +51,8 @@
       <div class="nav-bar">
         <a
           href="${grailsApplication.config.rundeck.gui.titleLink ? enc(attr:grailsApplication.config.rundeck.gui.titleLink) : g.createLink(uri: '/')}">
-          <img src="${resource(dir: 'images', file: 'rundeck-full-logo-white.png')}" alt="Rundeck"
-            style="height: 20px; width: auto;" />
+          <img src="${resource(dir: 'images', file: 'rundeck-full-logo-white.png')}" alt="One Touch Ops" title="One Touch Ops"
+            style="height: 50px; width: auto;" />
         </a>
       </div>
       <div style="padding-top:16vh;">
@@ -75,12 +82,12 @@
             <div>
               <a href="${grailsApplication.config.rundeck.gui.titleLink ? enc(attr:grailsApplication.config.rundeck.gui.titleLink) : g.createLink(uri: '/')}"
                 class="
-                btn btn-lg return-button">Return to Rundeck</a>
+                btn btn-lg return-button">Return to One Touch Ops</a>
             </div>
           </div>
         </div>
       </div>
-      <g:render template="/common/footer" />
+      %{--<g:render template="/common/footer" />--}%
     </div>
 </body>
 

@@ -23,7 +23,7 @@
                    title="${titleText ?: g.message(code: 'navigation.back.title')}"><g:icon name="arrow-left"/></a>
             </g:if>
             ${title}
-            <div class="buttons pull-right">
+            <div class="buttons pull-right edit-acl-dropdown">
               <div class="dropdown">
                   <bs:dropdownToggle id="aclHelp" css="btn btn-default btn-sm">Help</bs:dropdownToggle>
 

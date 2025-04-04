@@ -56,7 +56,7 @@
             <div>
               <a href="${grailsApplication.config.rundeck.gui.titleLink ? enc(attr:grailsApplication.config.rundeck.gui.titleLink) : g.createLink(uri: '/')}"
                 class="
-                btn btn-lg return-button">Return to Rundeck</a>
+                btn btn-lg return-button">Return to One Touch Ops</a>
             </div>
           </div>
         </div>

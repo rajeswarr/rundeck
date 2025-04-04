@@ -69,7 +69,7 @@
     </style>
 </head>
 <body>
-<div class="content">
+<div class="content create-project">
 <div id="layoutBody">
   <div class="row">
     <div class="col-sm-12">
@@ -99,18 +99,10 @@
       </g:if>
     </div>
     <div class="row">
-      <div class="flex justify-between">
-        <div style="margin-left:15px;margin-right:15px;" class="col-sm-12 col-md-5 card">
+      <div class="flex justify-between create-project-btn-container">
+        <div class="col-sm-12 col-md-5 card create-project-btn">
           <div class="card-content">
-            <span class="text-h3" data-bind="if: loadedProjectNames()">
-              <span data-bind="messageTemplate: projectNamesTotal, messageTemplatePluralize:true">
-                <g:message code="page.home.section.project.title" />|<g:message code="page.home.section.project.title.plural" />
-              </span>
-            </span>
-            <span class="text-h3 text-muted" data-bind="if: !loadedProjectNames()">
-                <b class="fas fa-spinner fa-spin loading-spinner"></b>
-                <g:message code="page.home.loading.projects" />
-            </span>
+          
             <auth:resourceAllowed action="${AuthConstants.ACTION_CREATE}" kind="${AuthConstants.TYPE_PROJECT}" context="${AuthConstants.CTX_APPLICATION}">
               <g:link controller="framework" action="createProject" class="btn  btn-cta pull-right">
                 <g:message code="page.home.new.project.button.label" />
@@ -119,7 +111,7 @@
             </auth:resourceAllowed>
           </div>
         </div>
-        <div style="margin-left:15px;margin-right:15px;" class="col-sm-12 col-md-7 card">
+        <div class="col-sm-12 col-md-7 card activity-list">
           <div class="card-content flex flex--direction-col flex--justify-center h-full">
             <span data-bind="if: !loaded()" class="text-muted">
               ...
@@ -194,12 +186,24 @@
           <div class="col-xs-12">
             <div class="card" >
               <div id="project-list" class="card-content">
-                <div>
+                <div class="project-container">
+                <div class="project-name">
+                  <span class="text-h3" data-bind="if: loadedProjectNames()">
+                    <span data-bind="messageTemplate: projectNamesTotal, messageTemplatePluralize:true">
+                      <g:message code="page.home.section.project.title" />|<g:message code="page.home.section.project.title.plural" />
+                    </span>
+                  </span>
+                  <span class="text-h3 text-muted" data-bind="if: !loadedProjectNames()">
+                      <b class="fas fa-spinner fa-spin loading-spinner"></b>
+                      <g:message code="page.home.loading.projects" />
+                  </span>
+                </div>
                   <div class="input-group">
                     <!-- <span class="input-group-addon"><i class="fa fa-search"></i></span> -->
                     <input type="search" name="search" placeholder="${message(code:"page.home.search.projects.input.placeholder")}" class="form-control input-sm" data-bind="value: search" />
                     <span class="input-group-addon"><g:icon name="search"/></span>
                   </div>
+                </div>
                   <div data-bind="if: filtered.enabledFiltersCount()>0 && loadedProjectNames()">
                     <div class="alert alert-info">
                       <span data-bind="messageTemplate: searchedProjectsCount(), messageTemplatePluralize:true, css: { 'text-info': searchedProjectsCount()>0, 'text-warning': searchedProjectsCount()<1 }">
@@ -207,7 +211,7 @@
                       </span>
                     </div>
                   </div>
-                </div>
+               
                 <div  data-bind="if: pagingEnabled()">
                   <span class="text-muted" data-bind="if: paging.hasPages()">
                     <span data-bind="text: paging.pageFirstIndex"></span>-<span data-bind="text: paging.pageLastIndex"></span>
@@ -320,8 +324,10 @@
                   <div class="pull-right">
                     <div class="dropdown-toggle-hover" >
                       <a href="#" class="as-block link-hover link-quiet link-block-padded text-inverse dropdown-toggle" data-toggle="dropdown">
-                        <g:message code="button.Action"/>
-                        <span class="caret"></span>
+                       
+                       <i class="glyphicon glyphicon-option-vertical"></i>
+                        %{-- <g:message code="button.Action"/>
+                        <span class="caret"></span> --}%
                       </a>
                       <ul class="dropdown-menu pull-right" role="menu">
                         <li data-bind="if: !$root.projectForName(project).loaded()">

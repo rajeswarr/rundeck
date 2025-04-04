@@ -4,18 +4,20 @@
     <g:set var="selectParams" value="${[page: _metaTabPage,project:params.project?:request.project]}"/>
   </g:if>
   <nav id="mainbar" class="mainbar">
-    <div id="nav-rd-home">
+      <div id="nav-rd-home">
       <a href="${grailsApplication.config.rundeck.gui.titleLink ? enc(attr:grailsApplication.config.rundeck.gui.titleLink) : g.createLink(uri: '/')}">
         <i class="rdicon app-logo" style="display:block"></i>
       </a>
     </div>
-    <!-- <div class="navbar-minimize">
+            <!-- 
+      <div class="navbar-minimize">
       <button class="btn btn-fill btn-icon">
         <i class="fas fa-ellipsis-v"></i>
         <i class="fas fa-ellipsis-h"></i>
       </button>
     </div> -->
-    <div class="mainbar__group" style="margin-left: 10px">
+    <div class="mainbar_container">
+    <div class="mainbar__group">
 %{--    Weeeooo Weeeooo; this section under impound on authority of the [Re]Design police--}%
 %{--      <button type="button" class="navbar-toggle">--}%
 %{--        <span class="sr-only">Toggle navigation</span>--}%
@@ -144,6 +146,21 @@
             </li>
 
           </g:ifExecutionMode>
+          <g:if test="${project ?: params.project ?: request.project}">
+                  <g:set var="projectName" value="${project ?: params.project ?: request.project}"/>
+          <g:if test="${projectName != 'PegUtils'}">
+            <div class = "pegutils-block" style="display: flex;font-size: 13px;
+            margin-right: 10%;text-decoration: underline;background-color: white;
+            color: white;padding: 8px 15px;text-align: center;text-decoration: none;border-radius: 10px;">
+              <div>
+                <a class = "pegutils-link" target="-blank" href="/project/PegUtils/crSetup"> PegUtils</a>
+              </div>
+              <div style="padding-left: 12px;">
+                <span class = "pegutils-span"> &gt; </span>
+            </div>
+          </div>
+          </g:if>
+          </g:if>
           <li id="appAdmin">
             <div class="dropdown">
               <a data-toggle="dropdown" class="dropdown-toggle">
@@ -162,6 +179,7 @@
           </li>
         </g:if>
       </ul>
+    </div>
     </div>
   </nav>
 %{--  <g:javascript>--}%

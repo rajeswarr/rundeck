@@ -103,7 +103,7 @@ search
 <body>
 <div class="content">
 <div id="layoutBody">
-    <div class="pageBody container-fluid">
+    <div class="pageBody onetouchops-activity container-fluid">
         <g:render template="/common/messages"/>
 
         <div class="row vue-project-activity">

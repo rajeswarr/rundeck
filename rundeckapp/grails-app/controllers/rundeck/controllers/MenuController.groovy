@@ -287,6 +287,8 @@ class MenuController extends ControllerBase implements ApplicationContextAware{
             case 'activity':
             case 'events':
                 return redirect(controller:'reports',action:'index', params: [project: params.project])
+            case 'reports':
+                return redirect(controller:'menu',action:'reports', params: [project: params.project])
         }
         return redirect(controller:'framework',action:'nodes', params: [project: params.project])
     }
@@ -303,7 +305,9 @@ class MenuController extends ControllerBase implements ApplicationContextAware{
     def crSetup(ScheduledExecutionQuery query ) {  
     }
     def envUtils(ScheduledExecutionQuery query ) {
-    }     
+    }
+    def reports(ScheduledExecutionQuery query ) {  
+    }   
     def jobs (ScheduledExecutionQuery query ){
 
         def User u = userService.findOrCreateUser(session.user)

@@ -41,6 +41,14 @@
     <asset:javascript src="vendor/jquery.js"/>
     <asset:javascript src="versionIdentity.js"/>
     <g:render template="/common/css"/>
+    <script type="text/javascript">
+      let themeColor = JSON.parse(localStorage.getItem('theme-user-preferences')) ? JSON.parse(localStorage.getItem('theme-user-preferences'))?.theme : 'purple';
+      document.querySelector('html').setAttribute('data-color-theme', themeColor);
+     //let themeColor = JSON.parse(localStorage.getItem('theme-user-preferences') || '{}') ? JSON.parse(localStorage.getItem('theme-user-preferences') || '{}')?.theme : 'blue';
+        document.querySelector('html')?.removeAttribute('class');
+        document.querySelector('html')?.classList.add(themeColor);
+     
+    </script>
 </head>
 <body id="loginpage">
     <div class="full-page login-page">
@@ -56,14 +64,16 @@
                   </span>
               </div>
             </g:if>
-            <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+            <div class="col-sm-12">
               <div class="card">
                 <div class="card-header">
                   <h4 class="card-title">
                     <div class="logo">
-                        <g:set var="logoImage" value="${g.message(code: 'app.login.logo', default: '')?:'logos/rundeck-logo-black.png'}"/>
-                        <a href="${grailsApplication.config.rundeck.gui.titleLink ? enc(attr:grailsApplication.config.rundeck.gui.titleLink) : g.createLink(uri: '/')}" title="Home">
-                            <asset:image src="${logoImage}" alt="Rundeck" style="width: 200px;" onload="SVGInject(this)"/>
+                       %{--<g:set var="logoImage" value="${g.message(code: 'app.login.logo', default: '')?:'logos/rundeck-logo-black.png'}"/>--}%
+                        <g:set var="logoImage" value="${g.message(code: 'app.login.logo', default: '')?:'static/img/rundeck-combination.svg'}"/>
+                        <a href="${grailsApplication.config.rundeck.gui.titleLink ? enc(attr:grailsApplication.config.rundeck.gui.titleLink) : g.createLink(uri: '/')}" title="One Touch Ops">
+                            %{--<asset:image src="${logoImage}" class="oto_logo" alt="One Touch Ops" onload="SVGInject(this)"/>--}%
+                            <div class="oto-logo"></div>
                         </a>
 
                         <g:set var="userDefinedLogo" value="${grailsApplication.config.rundeck?.gui?.logo}"/>

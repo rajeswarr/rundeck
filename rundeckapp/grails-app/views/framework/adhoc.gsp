@@ -341,7 +341,7 @@ search
 </div>
 
 <div class="container-fluid page-commands">
-  <div id="nodesContent" class="row">
+  <div id="nodesContent" class="row onetouchops-activity">
     <g:render template="/common/messages"/>
     <div class="col-sm-12">
       <div class="alert alert-warning collapse" id="runerror">

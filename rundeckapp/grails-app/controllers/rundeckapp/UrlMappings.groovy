@@ -242,9 +242,10 @@ class UrlMappings {
         "/project/$project?/services"(controller: 'menu', action: 'services')
         "/project/$project?/jobInstances"(controller: 'menu', action: 'jobInstances')
         "/project/$project?/servicesStatus"(controller: 'menu', action: 'servicesStatus') 
-        "/project/$project?/crSetup"(controller: 'menu', action: 'crSetup')  
+        "/project/$project?/crSetup"(controller: 'menu', action: 'crSetup')
+         "/project/$project?/reports"(controller: 'menu', action: 'reports')  
         "/project/$project?/envUtils"(controller: 'menu', action: 'envUtils') 	
-	"/project/$project/job/show/$id/$fullName**"(controller: 'scheduledExecution', action: 'show')
+	    "/project/$project/job/show/$id/$fullName**"(controller: 'scheduledExecution', action: 'show')
         "/project/$project/job/show/$id"(controller: 'scheduledExecution', action: 'show')
         "/project/$project/job/upload"(controller: 'scheduledExecution'){
             action = [GET: 'upload', POST: 'uploadPost']

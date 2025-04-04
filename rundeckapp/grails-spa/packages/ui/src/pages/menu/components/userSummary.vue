@@ -64,7 +64,7 @@
     <section id="userProfilePage" class="section-space">
               <div class="row">
                 <div :class="{'col-sm-8':showLoginStatus, 'col-sm-10': !showLoginStatus}">
-                  <section class="section-space-bottom">
+                  <section class="section-space-bottom margin-bottom-16">
                     <span>
                       {{ $t("message.pageUsersTotalFounds")}}
                       <span
@@ -75,14 +75,13 @@
                     </span>
                     <span style="margin-left: 10px;">
                       <btn
-                              class="btn btn-secondary btn-sm "
-                              style="margin-bottom:1em;"
+                              class="btn btn-secondary btn-sm"
                               @click="openModal=true"
                       >Search...</btn>
                       <btn
                               v-if="search"
                               style="margin-right:1em;"
-                              class="btn btn-secondary btn-sm "
+                              class="btn btn-secondary btn-sm margin-left-16"
                               @click="clearSearchParams()"
                       >Clear</btn>
                     </span>

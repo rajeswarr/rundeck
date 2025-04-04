@@ -37,7 +37,7 @@
 <div id="layoutBody">
   <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 p-0">
             <g:render template="/common/messages"/>
         </div>
     </div>

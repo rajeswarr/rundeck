@@ -742,7 +742,7 @@
                 <g:hiddenField name="newoption" value="true"/>
                 <span class="btn btn-default btn-sm" onclick="_optcancelnew();"
                       title="${g.message(code:'form.option.cancel.title',encodeAs:'HTMLAttribute')}"><g:message code="cancel" /></span>
-                <span class="btn btn-primary btn-sm" onclick="_optsavenew('optedit_${enc(attr:rkey)}', 'reqtoken_${enc(attr:rkey)}');"
+                <span class="btn btn-cta btn-sm" onclick="_optsavenew('optedit_${enc(attr:rkey)}', 'reqtoken_${enc(attr:rkey)}');"
                       title="${g.message(code:'form.option.create.title', encodeAs: 'HTMLAttribute')}"><g:message code="save" /></span>
                 <g:javascript>
                     fireWhenReady('optname_${enc(js:rkey)}',function(){
